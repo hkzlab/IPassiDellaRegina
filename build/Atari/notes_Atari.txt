@@ -1,0 +1,13 @@
+                             I PASSI DELLA REGINA
+
+                     Un'avventura testuale di Davide Bucci
+
+                              (Atari 8-bit 48K)
+
+Questa versione contiene il gioco diviso in tre parti, distribuite come file
+.xex da usare su un emulatore o sul computer originale. Per poter accedere alla
+seconda e terza parte del gioco, prendi nota delle password che sono date nei
+punti salienti del gioco.
+
+RINGRAZIAMENTI: Vorrei ringraziare Filippo Santellocco per l'aiuto ed il
+costante supporto fornitomi per adattare il gioco alla piattaforma Atari 8-bit.

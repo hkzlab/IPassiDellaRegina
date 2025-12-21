@@ -1,0 +1,208 @@
+prendi la brochure
+s
+s
+esamina la porta
+prendi il grasso
+sotto
+parla con il receptionist
+leggi il telegramma
+s
+s
+o
+parla con operatrice
+e
+n
+e
+e
+s
+x cancello
+n
+o
+o
+o
+n
+parla con impiegato
+s
+o
+n
+x tavolino
+parla all'ufficiale
+prendi carta
+n
+n
+metti la brochure nella porta
+e
+prendi penna
+esamina cestino
+prendi foglio
+o
+s
+s
+s
+s
+parla con la commessa
+ripara foglio
+n
+e
+n
+dai ordine a impiegato
+s
+o
+n
+n
+n
+n
+n
+e
+e
+cerca il numero 12
+o
+o
+s
+s
+s
+s
+e
+e
+n
+parla con receptionist
+
+parla con receptionist
+
+parla con padre
+mostra lettera al padre
+prendi auto
+s
+s
+parla a Temistocle
+
+n
+n
+e
+e
+s
+s
+s
+
+n
+n
+n
+e
+e
+prendi il tram
+
+
+
+o
+o
+n
+e
+prova Fibonacci
+
+n
+x statua
+su
+esamina cadavere
+esamina sbarre
+prendi fascicolo
+giu
+s
+o
+s
+o
+o
+guida l'auto
+leggi telegramma
+guida l'auto
+e
+s
+parla con Antonia
+
+
+
+
+n
+o
+s
+e
+e
+parla con bibliotecario
+leggi il libro
+o
+o
+n
+n
+e
+s
+parla con Antonia
+
+
+x lavori in corso
+x cassa
+prendi lampada
+prendi corda
+accendi lampada
+giu
+e
+e
+e
+x spazzatura
+prendi piede di porco
+o
+o
+demolisci il muro
+s
+e
+s
+s
+e
+n
+prendi lanterna
+e
+prendi bastone
+o
+n
+n
+o
+n
+e
+prendi grasso
+o
+s
+giu
+versa olio su meccanismo
+gira manovella
+su
+e
+s
+lega la corda alla grata
+giu
+s
+s
+dai fuoco al bastone
+lancia torcia
+
+o
+su
+
+
+
+bussa sui muri
+spingi muro ad ovest
+o
+n
+prendi i sandali
+s
+indossa occhiali
+tira leva
+su
+o
+
+
+e
+apri finestra
+salta fuori
+
+
+
+

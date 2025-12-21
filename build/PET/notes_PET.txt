@@ -1,0 +1,7 @@
+                                 I PASSI DELLA REGINA
+
+                          Un'avventura testuale di Davide Bucci
+
+Versione per Commodore PET. Questo gioco richiede almeno 32 KB di RAM.
+La directory PET40 contiene la versione per PET a 40 colonne, la directory
+PET80 quella per 80 colonne.

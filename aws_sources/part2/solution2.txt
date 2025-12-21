@@ -1,0 +1,68 @@
+shibboleth fanfaluch
+
+parla con padre
+mostra lettera al padre
+prendi auto
+s
+s
+parla a Temistocle
+
+n
+n
+e
+e
+s
+s
+s
+
+n
+n
+n
+e
+e
+prendi il tram
+
+
+
+o
+o
+n
+e
+prova Fibonacci
+
+n
+x statua
+su
+esamina cadavere
+esamina sbarre
+prendi fascicolo
+giu
+s
+o
+s
+o
+o
+guida l'auto
+leggi telegramma
+guida l'auto
+e
+s
+parla con Antonia
+
+
+
+
+n
+o
+s
+e
+e
+parla con bibliotecario
+leggi il libro
+o
+o
+n
+n
+e
+s
+parla con Antonia

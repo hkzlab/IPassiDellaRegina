@@ -1,0 +1,19 @@
+NOTE AGGIUNTIVE PER LA VERSIONE ATARI ST DE "I PASSI DELLA REGINA"
+
+                        Davide Bucci
+
+Ho preparato due eseguibili per Atari ST (provati con TOS 1.62):
+- tqf40.tos può essere usato con display a bassa risoluzione, è una versione
+  più colorata.
+- tqf80.tos è più adatto a display a media risoluzione, mostra il testo su 80
+  colonne e monocromatico.
+
+La versione ST de I passi della regina non avrebbe potuto esistere senza il
+lavoro e l'assistenza di George Nakos, che ha anche provvisto il codice utile
+per mostrare lo splash screen ed ha convertito l'immagine.
+
+Per commenti o domande, non esitate a scrivermi a:
+
+davbucciNOSPAM@tiscali.it
+
+(email con allegati saranno automaticamente eliminate dal mio provider)

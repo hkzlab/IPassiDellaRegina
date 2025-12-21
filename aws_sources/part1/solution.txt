@@ -1,0 +1,70 @@
+prendi la brochure
+s
+s
+esamina la porta
+prendi il grasso
+sotto
+parla con il receptionist
+leggi il telegramma
+s
+s
+o
+parla con operatrice
+e
+n
+e
+e
+s
+x cancello
+n
+o
+o
+o
+n
+parla con impiegato
+s
+o
+n
+x tavolino
+parla all'ufficiale
+prendi carta
+n
+n
+metti la brochure nella porta
+e
+prendi penna
+esamina cestino
+prendi foglio
+o
+s
+s
+s
+s
+parla con la commessa
+ripara foglio
+n
+e
+n
+dai ordine a impiegato
+s
+o
+n
+n
+n
+n
+n
+e
+e
+cerca il numero 12
+o
+o
+s
+s
+s
+s
+e
+e
+n
+parla con receptionist
+
+parla con receptionist

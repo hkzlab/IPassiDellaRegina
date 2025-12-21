@@ -1,0 +1,1800 @@
+AWS
+VERSIONE
+3.0
+0
+7
+7
+0
+I passi della regina, parte 1
+Davide Bucci
+Versione 0.2.2, Gennaio 2022
+
+1
+
+0
+0
+100
+FALSE
+0
+0
+CONDIZIONIHI
+IF AT 100 THEN PRESSKEY GOTO 1 ENDIF Print the introduction and wait a key.
+IF AT 6 AND SET? 44 AND RES? 45 THEN RESE 44 SET 45 MESS 16 ENDIF After reading the first telegram, a car tries to run over Emilia.
+IF THEN DECR 49 ENDIF
+IF THEN DECR 41 ENDIF
+IF EQU? 49 0 THEN TO 49 13 ENDIF Check if the harbour officer should be at his office or not.
+IF AT 13 AND EQU? 49 0 AND SET? 49 THEN RESE 49 MESS 49 ENDIF The harbour officer has come back
+IF SET? 52 AND SET? 57 AND AVAI 45 AND RES? 56 AND SET? 29 THEN MESS 57 SET 56 ENDIF Collect three pieces of information about Rovelli. Decide to investigate on him.
+CONDIZIONILOW
+if verb 70 and noun 409 then mess 518 wait endif
+if verb 73 then quit endif
+if verb 74 or verb 0 and noun 72 then inve wait endif
+if verb 987 then restart endif
+if verb 110 then look wait endif
+IF AT 5 AND RES? 42 AND NO1GT 80 AND NO1LT 86 THEN MESS 19 WAIT ENDIF Remind that you must talk to the clerk.
+IF verb 100 OR vbnoeq 0 AND noun 80 THEN nord WAIT ENDIF  VAI  NORD
+IF verb 100 OR vbnoeq 0 AND noun 81 THEN sud WAIT ENDIF  VAI  SUD
+IF verb 100 OR vbnoeq 0 AND noun 82 THEN est WAIT ENDIF  VAI  EST
+IF verb 100 OR vbnoeq 0 AND noun 83 THEN ovest WAIT ENDIF  VAI OVEST
+IF verb 100 OR vbnoeq 0 AND noun 84 THEN alto WAIT ENDIF  VAI ALTO
+IF verb 100 OR vbnoeq 0 AND noun 85 THEN basso WAIT ENDIF  VAI BASSO
+IF verb 201 THEN MESS 400 WAIT ENDIF Sleep
+IF verb 12 and noun 10 THEN MESS 401 WAIT ENDIF Open window -> no
+IF verb 1000 then MESS 998 WAIT ENDIF XYZZY
+IF verb 400 THEN mess 504 WAIT ENDIF Curse
+IF VERB 143 AND ROOMGT 12 AND ROOMLT 20 THEN MESS 101 WAIT ENDIF Smell in the harbour 
+IF VERB 143 THEN mess 997 WAIT ENDIF Smell...
+IF ROOMLT 3 AND VERB 70 AND NOUN 228 THEN MESS 22 WAIT ENDIF Examine carpet
+IF VERB 155 AND NOTAVAI 34 AND SET? 36 THEN MESS 913 WAIT ENDIF *** Version 1.1 Try to write without a quill/pen.
+IF VERB 155 AND NOTAVAI 34 THEN MESS 54 WAIT ENDIF Try to write without a quill/pen.
+IF VERB 211 OR VERB 406 OR VERB 67 THEN mess 401 WAIT ENDIF Touch..., Drink..., Wash...
+IF VERB 70 AND NOUN 48 AND AVAI 48 THEN MESS 105 WAIT ENDIF Examine falsified order.
+IF VERB 66 AND NOUN 48 AND ACTOR 46 AND AVAI 46 AND AVAI 48 THEN MESS 55 SET 55 TO 38 1500 WAIT ENDIF Give the falsified order to the archives employee.
+IF VERB 70 AND NOUN 44 AND AVAI 44 AND NOTAVAI 43 THEN MESS 44 WAIT ENDIF Try to read torn sheet, without gum paper
+IF VERB 70 OR VERB 111 AND NOUN 44 AND AVAI 44 AND AVAI 43 THEN MESS 45 TO 45 1500 TO 44 0 WAIT ENDIF Read/repair torn sheet has gum paper
+IF VERB 15 AND NOUN 43 AND AVAI 43 AND AVAI 44 THEN MESS 45 TO 45 1500 TO 44 0 WAIT ENDIF Use gum paper on torn sheet
+IF VERB 70 AND NOUN 42 AND AVAI 42 THEN MESS 13 SET 42 SET 44 WAIT ENDIF Examine/Read telegram.
+IF VERB 70 AND NOUN 45 AND AVAI 45 AND RES? 29 THEN MESS 45 WAIT ENDIF Read again the letter
+IF VERB 70 AND NOUN 45 AND AVAI 45 AND SET? 29 THEN MESS 45 MESS 34 WAIT ENDIF Read again the letter, has seen the symbol on the gate
+IF VERB 70 AND NOUN 36 AND AVAI 36 AND RES? 28 THEN MESS 36 WAIT ENDIF Examine/read the brochure
+IF VERB 70 AND NOUN 36 AND AVAI 36 THEN MESS 29 WAIT ENDIF Examine/read the brochure, with grease
+IF VERB 70 AND NOUN 5 AND AVAI 37 THEN MESS 32 WAIT ENDIF Examine grease
+IF NOUN 43 OR NOUN 44 AND VERB 50 AND AVAI 32 AND AVAI 49 THEN MESS 50 WAIT ENDIF Can't take this if the officer is here
+IF VERB 50 AND NOUN 33 AND AVAI 33 AND AVAI 49 THEN MESS 50 WAIT ENDIF Can't take this if the officer is here
+IF NOUN 43 OR NOUN 44 AND VERB 50 AND AVAI 32 THEN TO 34 1500 MESS 51 SET 51 WAIT ENDIF Take headed paper, no officer around
+IF VERB 50 AND NOUN 33 AND AVAI 33 THEN TO 34 1500 MESS 51 SET 51 WAIT ENDIF Take headed paper, no officer around
+IF VERB 50 OR VERB 15 AND NOUN 34 AND AVAI 35 AND AVAI 34 THEN MESS 52 TO 34 0 TO 48 1500 WAIT ENDIF Write on the falsified order
+IF VERB 155 AND AVAI 35 AND AVAI 34 THEN MESS 52 TO 34 0 TO 48 1500 WAIT ENDIF Write on the falsified order
+IF VERB 50 AND NOUN 34 AND AVAI 35 THEN MESS 96 WAIT ENDIF Try to take the quill/inkwell
+IF VERB 70 AND NOUN 34 AND AVAI 35 THEN MESS 97 WAIT ENDIF Examine the quill/inkwell
+IF VERB 70 AND NOUN 38 AND AVAI 38 THEN MESS 104 WAIT ENDIF Examine card with Rovelli's address
+IF VERB 407 THEN MESS 407 WAIT ENDIF
+IF VERB 70 AND NOUN 79 THEN LOOK WAIT ENDIF Examine room = look
+IF VERB 15 THEN MESS 902 WAIT ENDIF *** Version 1.1 - "Use" -> be more specific!
+IF VERB 210 THEN MESS 231 WAIT ENDIF Pray
+IF VERB 70 AND NOUN 208 THEN MESS 900 WAIT ENDIF *** Version 1.1 - Examine money.
+IF VERB 55 AND NOUN 208 THEN MESS 237 WAIT ENDIF *** Version 1.1 - Drop money.
+IF VERB 66 AND NOUN 208 THEN MESS 901 WAIT ENDIF *** Version 1.1 - Give money.
+IF VERB 70 AND NOUN 43 AND AVAI 34 THEN MESS 54 WAIT ENDIF *** Version 1.1.1 - Examine headed paper.
+IF VERB 55 AND NOUN 43 AND AVAI 34 THEN MESS 237 WAIT ENDIF *** Version 1.1.1 - Drop headed paper ->no.
+IF VERB 50 AND NO1GT 35 AND NO1LT 50 THEN GET NO1 OKAY ENDIF Take an object
+IF VERB 55 AND NO1GT 31 AND NO1LT 50 THEN DROP NO1 OKAY ENDIF Drop an object
+IF VERB 70 THEN MESS 996 WAIT ENDIF Examine (without a known object)
+IF NOUN 408 AND SET? 42 AND RES? 36 THEN MESS 93 WAIT ENDIF Hint 2
+IF NOUN 408 THEN MESS 92 WAIT ENDIF Hint 1
+IF VERB 988 THEN LOAD WAIT ENDIF Load
+IF VERB 989 THEN SAVE WAIT ENDIF Save
+IF VERB 76 THEN MESS 108 WAIT ENDIF Exit/Quit -> use "bye"
+CONDIZIONILOCALI
+1
+IF VERB 70 AND NOUN 219 THEN MESS 1 WAIT ENDIF Examine mirror
+1
+IF VERB 70 AND NOUN 18 THEN MESS 2 WAIT ENDIF Examine bed
+1
+IF VERB 1 AND NOUN 18 THEN MESS 3 WAIT ENDIF Make bed
+1
+IF VERB 15 AND NOUN 18 THEN MESS 400 WAIT ENDIF Use bed
+1
+IF VERB 70 AND NOUN 10 THEN MESS 4 WAIT ENDIF Examine window
+1
+IF VERB 70 AND NOUN 3 THEN MESS 5 WAIT ENDIF Examine tapestry
+1
+IF VERB 70 AND NOUN 2 THEN MESS 6 WAIT ENDIF Examine radiator
+1
+IF VERB 15 AND NOUN 59 THEN MESS 7 WAIT ENDIF Use washbowl
+1
+IF VERB 70 AND NOUN 59 THEN MESS 102 WAIT ENDIF Use washbowl
+1
+IF VERB 70 AND NOUN 58 THEN MESS 8 WAIT ENDIF Examine chandelier
+1
+IF VERB 70 AND NOUN 6 THEN MESS 66 WAIT ENDIF Examine light
+2
+IF VERB 143 THEN mess 9 WAIT ENDIF Smell...
+2
+IF VERB 70 AND NOUN 23 THEN MESS 25 WAIT ENDIF Examine panels
+2
+IF VERB 70 AND NOUN 58 THEN MESS 26 WAIT ENDIF Examine burner
+3
+IF VERB 143 THEN mess 10 WAIT ENDIF Smell -> you can't decide...
+3
+IF NOUN 21 OR NOUN 23 AND VERB 70 THEN MESS 23 WAIT ENDIF Examine panel
+3
+IF VERB 15 AND NOUN 21 THEN BASSO WAIT ENDIF Press button -> go down
+3
+IF VERB 70 AND NOUN 4 THEN MESS 27 BRIN 37 WAIT ENDIF Find the grease
+3
+IF VERB 50 AND NOUN 5 AND NOTAVAI 36 THEN MESS 28 WAIT ENDIF Take the grease, without the brochure
+3
+IF VERB 50 AND NOUN 5 AND AVAI 36 THEN MESS 30 SET 28 TO 37 0 WAIT ENDIF Take the grease, with the brochure
+4
+IF VERB 70 AND ACTOR 40 THEN MESS 40 WAIT ENDIF Examine clerk
+4
+IF VERB 52 AND ACTOR 40 THEN MESS 109 WAIT ENDIF Thank clerk
+4
+IF VERB 88 THEN MESS 107 WAIT ENDIF
+4
+IF VERB 70 AND NOUN 10 THEN MESS 4 WAIT ENDIF Examine window
+4
+IF VERB 70 AND NOUN 22 THEN MESS 24 WAIT ENDIF Examine curtains
+4
+IF VERB 70 AND NOUN 23 THEN MESS 67 WAIT ENDIF Examine panel
+4
+IF VERB 70 AND NOUN 97 THEN MESS 68 WAIT ENDIF Examine elevator
+4
+IF VERB 75 AND ACTOR 40 AND SET? 56 THEN MESS 61 PRESSKEY MESS 62 EXIT ENDIF End of part 1: Emilia buy tickets to go to Turin.
+4
+IF VERB 75 AND ACTOR 40 AND RES? 40 THEN MESS 11 SET 40 TO 42 1500 WAIT ENDIF Talk to clerk, he gives you the telegram
+4
+IF SET? 41 AND EQU? 41 0 AND RES? 52 THEN MESS 56 SET 52 WAIT ENDIF Receive second telegram
+4
+IF VERB 75 AND ACTOR 40 THEN MESS 12 WAIT ENDIF Talk to clerk, telegram already given
+5
+IF VERB 70 AND NOUN 108 THEN MESS 69 WAIT ENDIF Examine shops
+5
+IF VERB 70 AND NOUN 99 THEN MESS 70 WAIT ENDIF Examine tramway
+7
+IF VERB 70 AND NOUN 101 THEN MESS 71 WAIT ENDIF Examine trees
+7
+IF VERB 70 AND NOUN 99 THEN MESS 76 WAIT ENDIF Examine tramway/rails
+7
+IF VERB 143 THEN MESS 72 WAIT ENDIF Smell
+7
+IF VERB 70 AND NOUN 102 THEN MESS 77 WAIT ENDIF Examine stones
+8
+IF VERB 70 AND NOUN 4 THEN MESS 33 SET 29 WAIT ENDIF Examine the iron gate
+8
+IF VERB 69 AND NOUN 71 THEN MESS 64 WAIT ENDIF Pull the handle
+8
+IF VERB 70 AND NOUN 71 THEN MESS 78 WAIT ENDIF Examine bell/handle
+8
+IF VERB 70 AND NOUN 101 THEN MESS 73 WAIT ENDIF Examine park/trees
+9
+IF VERB 70 AND NOUN 98 THEN MESS 74 WAIT ENDIF Examine buildings
+9
+IF VERB 70 AND NOUN 96 THEN MESS 75 WAIT ENDIF Examine statue
+10
+IF VERB 75 AND ACTOR 41 AND RES? 41 AND SET? 42 THEN MESS 14 SET 41 CSET 41 10 WAIT ENDIF Talk to telegraph operator, send a telegram to Schiaparelli
+10
+IF VERB 75 AND ACTOR 41 THEN MESS 401 WAIT ENDIF No need to send another telegram.
+10
+IF VERB 70 AND ACTOR 41 THEN MESS 41 WAIT ENDIF Examine operator.
+10
+IF VERB 52 AND ACTOR 41 THEN MESS 109 WAIT ENDIF Thank operator.
+10
+IF VERB 70 AND NOUN 103 THEN MESS 79 WAIT ENDIF Examine receiver.
+10
+IF VERB 70 AND NOUN 9 THEN MESS 80 WAIT ENDIF Examine key.
+10
+IF VERB 70 AND NOUN 104 THEN MESS 81 WAIT ENDIF Examine selector.
+10
+IF VERB 70 AND NOUN 106 THEN MESS 82 WAIT ENDIF Examine plug.
+10
+IF VERB 70 AND NOUN 43 AND NOTAVAI 43 THEN MESS 83 WAIT ENDIF Examine paper.
+10
+IF NOUN 20 OR NOUN 51 AND VERB 70 THEN MESS 84 WAIT ENDIF Examine desk
+11
+IF VERB 70 AND NOUN 98 THEN MESS 85 WAIT ENDIF Examine building
+12
+IF VERB 143 THEN MESS 86 WAIT ENDIF Smell
+12
+IF VERB 70 AND NOUN 107 THEN MESS 87 WAIT ENDIF Examine booths
+12
+IF VERB 70 AND NOUN 108 THEN MESS 88 WAIT ENDIF Examine stores
+12
+IF VERB 70 AND NOUN 109 THEN MESS 89 WAIT ENDIF Examine porch/sottoripa
+13
+IF VERB 70 AND NOUN 51 AND SET? 47 AND RES? 50 THEN MESS 46 MESS 47 SET 50 WAIT ENDIF Examine front office after having met the archive clerk
+13
+IF VERB 70 AND NOUN 51 THEN MESS 46 WAIT ENDIF Examine front office/table
+13
+IF VERB 75 AND ACTOR 49 AND SET? 50 AND RES? 51 THEN MESS 48 CSET 49 5 SET 49 TO 49 0 BRIN 32 BRIN 33 WAIT ENDIF You send out the officer searching for some silly stuff...
+13
+IF VERB 75 AND ACTOR 49 THEN MESS 106 WAIT ENDIF Talk to officer, but no reason to do that yet.
+13
+IF VERB 70 AND ACTOR 49 AND AVAI 49 THEN MESS 53 WAIT ENDIF Examine officer
+16
+IF VERB 12 OR VERB 70 AND NOUN 4 AND RES? 36 THEN MESS 58 WAIT ENDIF Open the door, but it's closed
+16
+IF VERB 12 OR VERB 70 AND NOUN 4 THEN MESS 60 WAIT ENDIF Open the door and it's open
+16
+IF VERB 55 OR VERB 15 AND NO1EQ 36 AND NO2EQ 4 AND RES? 36 AND SET? 28 THEN MESS 59 SET 36 SETCONN 16 3 19 WAIT ENDIF Put the greasy brochure in the door
+16
+IF VERB 55 OR VERB 15 AND NO1EQ 38 AND NO2EQ 4 AND RES? 36 AND SET? 28 THEN MESS 59 SET 36 SETCONN 16 3 19 WAIT ENDIF *** Version 1.1 : Put the greasy brochure in the door (accept "card")
+16
+IF VERB 55 OR VERB 15 AND NO1EQ 36 AND NO2EQ 4 AND RES? 36 THEN MESS 31 WAIT ENDIF Put the brochure, no grease
+16
+IF VERB 55 OR VERB 15 AND NO1EQ 36 THEN MESS 103 WAIT ENDIF Put the brochure, no second name.
+16
+IF VERB 70 AND NOUN 51 THEN MESS 94 WAIT ENDIF Examine office
+16
+IF VERB 70 AND NOUN 99 THEN MESS 95 WAIT ENDIF Examine rails
+18
+IF VERB 70 AND NOUN 112 THEN MESS 99 WAIT ENDIF Examine facade
+19
+IF VERB 70 AND NOUN 32 AND RES? 43 THEN BRIN 44 SET 43 MESS 15 WAIT ENDIF Search wastebin, find torn sheet.
+19
+IF VERB 70 AND NOUN 20 THEN MESS 98 WAIT ENDIF Examine desk/dossiers
+20
+IF VERB 75 AND ACTOR 46 AND RES? 45 THEN MESS 401 WAIT ENDIF Talk with employee, but no reason for that.
+20
+IF VERB 75 AND ACTOR 46 AND NOTAVAI 48 THEN MESS 17 SET 47 WAIT ENDIF Talk with employee, without order. You need an order.
+20
+IF VERB 70 AND ACTOR 46 THEN MESS 18 WAIT ENDIF Examine employee
+21
+IF VERB 70 AND ACTOR 41 THEN MESS 20 WAIT ENDIF Examine clerk
+21
+IF VERB 75 AND ACTOR 41 AND SET? 43 AND RES? 46 THEN MESS 21 TO 43 1500 SET 46 WAIT ENDIF Talk to clerk, buy gum paper
+21
+IF VERB 66 AND NOUN 208 AND ACTOR 41 THEN MESS 905 WAIT ENDIF *** Version 1.1 - Speak with clerk, instead
+21
+IF VERB 75 AND ACTOR 41 AND AVAI 34 THEN MESS 904 WAIT ENDIF *** Version 1.1: Speak with clerk while having the headed paper -> wrong ink colour.
+21
+IF VERB 75 AND ACTOR 41 THEN MESS 401 WAIT ENDIF Talk to clerk, no need.
+21
+IF VERB 52 AND ACTOR 41 THEN MESS 109 WAIT ENDIF Thank clerk
+21
+IF VERB 88 THEN MESS 905 WAIT ENDIF *** Version 1.1: Buy... -> speak with the clerk instead
+22
+IF VERB 70 AND NOUN 98 THEN MESS 110 WAIT ENDIF Examine houses
+22
+IF VERB 70 AND NOUN 68 AND SET? 55 THEN SET 57 MESS 63 WAIT ENDIF Visit Rovelli's place and find he's gone to Turin
+22
+IF VERB 100 AND NOUN 68 AND SET? 55 AND RES? 57 THEN SET 57 MESS 63 WAIT ENDIF Visit Rovelli's place and find he's gone to Turin *** Added in v. 1.1
+22
+IF VERB 70 AND NOUN 96 THEN MESS 65 WAIT ENDIF Examine monument
+22
+IF VERB 70 AND NOUN 60 THEN MESS 100 WAIT ENDIF Examine garden
+22
+IF VERB 70 THEN MESS 401 WAIT ENDIF Examine/search without known object
+DIZIONARIO
+FAI
+1
+VERBO
+TERMOSIFONE
+2
+NOME
+RADIATORE
+2
+NOME
+TAPPEZZERIE
+3
+NOME
+TAPPEZZERIA
+3
+NOME
+DISEGNI
+3
+NOME
+MOTIVI
+3
+NOME
+PORTA
+4
+NOME
+CANCELLO
+4
+NOME
+GRASSO
+5
+NOME
+LUCE
+6
+NOME
+CHIAVE
+9
+NOME
+TASTO
+9
+NOME
+FINESTRA
+10
+NOME
+FINESTRE
+10
+NOME
+CASSETTO
+11
+NOME
+CASSETTI
+11
+NOME
+APRI
+12
+VERBO
+ARMADIO
+13
+NOME
+USA
+15
+VERBO
+PREMI
+15
+VERBO
+ATTIVA
+15
+VERBO
+CORNICE
+17
+NOME
+LETTO
+18
+NOME
+DOSSIER
+20
+NOME
+TARGA
+21
+NOME
+PLACCA
+21
+NOME
+BOTTONE
+21
+NOME
+BOTTONI
+21
+NOME
+TENDE
+22
+NOME
+TAFFETA
+22
+NOME
+MURO
+23
+NOME
+MURI
+23
+NOME
+PARETE
+23
+NOME
+PARETI
+23
+NOME
+PANNELLO
+23
+NOME
+PANNELLINO
+23
+NOME
+PANNELLI
+23
+NOME
+IMPIALLICCIATURA
+23
+NOME
+LEGNO
+23
+NOME
+TRAMONTO
+31
+NOME
+CESTINO
+32
+NOME
+SPAZZATURA
+32
+NOME
+PATTUMIERA
+32
+NOME
+FRANCOBOLLO
+33
+NOME
+INCHIOSTRO
+34
+NOME
+CALAMAIO
+34
+NOME
+PENNA
+34
+NOME
+BROCHURE
+36
+NOME
+OPUSCOLO
+36
+NOME
+VOLANTINO
+36
+NOME
+BIGLIETTO
+38
+NOME
+RECEPTIONIST
+40
+ATTORE
+COMMESSA
+41
+ATTORE
+VENDITRICE
+41
+ATTORE
+TELEGRAFISTA
+41
+ATTORE
+OPERATRICE
+41
+ATTORE
+DONNA
+41
+ATTORE
+IMPIEGATA
+41
+ATTORE
+TELEGRAMMA
+42
+NOME
+CARTA
+43
+NOME
+FOGLIO
+44
+NOME
+PEZZI
+44
+NOME
+LETTERA
+45
+NOME
+OPERATORE
+46
+ATTORE
+UOMO
+46
+ATTORE
+IMPIEGATO
+46
+ATTORE
+ORDINE
+48
+NOME
+UFFICIALE
+49
+ATTORE
+PRENDI
+50
+VERBO
+AFFERRA
+50
+VERBO
+RACCOGLI
+50
+VERBO
+TAVOLO
+51
+NOME
+SCRIVANIA
+51
+NOME
+TAVOLINO
+51
+NOME
+UFFICIO
+51
+NOME
+UFFICETTO
+51
+NOME
+BOX
+51
+NOME
+RINGRAZIA
+52
+VERBO
+LASCIA
+55
+VERBO
+MOLLA
+55
+VERBO
+INFILA
+55
+VERBO
+INSERISCI
+55
+VERBO
+METTI
+55
+VERBO
+LANCIA
+55
+VERBO
+GUIDA
+56
+VERBO
+ENTRA
+56
+VERBO
+LIBRO
+57
+NOME
+LIBRI
+57
+NOME
+LAMPADARIO
+58
+NOME
+LAMPADA
+58
+NOME
+LAMPADE
+58
+NOME
+BRUCIATORE
+58
+NOME
+BRUCIATORI
+58
+NOME
+BECCO
+58
+NOME
+BECCHI
+58
+NOME
+BECCUCCIO
+58
+NOME
+BECCUCCI
+58
+NOME
+CATINO
+59
+NOME
+CARAFFA
+59
+NOME
+BROCCA
+59
+NOME
+GIARDINO
+60
+NOME
+FIORE
+62
+NOME
+FIORI
+62
+NOME
+DAI
+66
+VERBO
+LAVA
+67
+VERBO
+PULISCI
+67
+VERBO
+12
+68
+NOME
+DODICI
+68
+NOME
+TIRA
+69
+VERBO
+SPINGI
+69
+VERBO
+ESAMINA
+70
+VERBO
+EX
+70
+VERBO
+ESAM
+70
+VERBO
+X
+70
+VERBO
+LEGGI
+70
+VERBO
+CERCA
+70
+VERBO
+MANIGLIA
+71
+NOME
+LEVA
+71
+NOME
+CAMPANELLO
+71
+NOME
+I
+72
+NOME
+INV
+72
+NOME
+INVE
+72
+NOME
+INVENTARIO
+72
+NOME
+ABBANDONA
+73
+VERBO
+MOSTRA
+74
+VERBO
+CHIACCHERA
+75
+VERBO
+PARLA
+75
+VERBO
+CHIEDI
+75
+VERBO
+ESCI
+76
+VERBO
+SCAPPA
+76
+VERBO
+GIOCA
+77
+VERBO
+SUONA
+77
+VERBO
+ROMPI
+78
+VERBO
+DISTRUGGI
+78
+VERBO
+STANZA
+79
+NOME
+N
+80
+NOME
+NORD
+80
+NOME
+S
+81
+NOME
+SUD
+81
+NOME
+E
+82
+NOME
+EST
+82
+NOME
+O
+83
+NOME
+OVEST
+83
+NOME
+SOPRA
+84
+NOME
+U
+84
+NOME
+SU
+84
+NOME
+SOTTO
+85
+NOME
+D
+85
+NOME
+GIU
+85
+NOME
+BASSO
+85
+VERBO
+RIEMPI
+86
+VERBO
+COMPRA
+88
+VERBO
+STATUA
+96
+NOME
+MONUMENTO
+96
+NOME
+CRISTOFORO
+96
+NOME
+COLOMBO
+96
+NOME
+ASCENSORE
+97
+NOME
+EDIFICIO
+98
+NOME
+EDIFICI
+98
+NOME
+PALAZZO
+98
+NOME
+PALAZZI
+98
+NOME
+CASA
+98
+NOME
+CASE
+98
+NOME
+TRAM
+99
+NOME
+TRAMVIA
+99
+NOME
+ROTAIE
+99
+NOME
+ROTAIA
+99
+NOME
+FERROVIA
+99
+NOME
+VAI
+100
+VERBO
+CORRI
+100
+VERBO
+CAMMINA
+100
+VERBO
+ALBERO
+101
+NOME
+ALBERI
+101
+NOME
+PARCO
+101
+NOME
+PIETRA
+102
+NOME
+PIETRE
+102
+NOME
+RICEVITORE
+103
+NOME
+TELEGRAFO
+103
+NOME
+STAZIONE
+103
+NOME
+SELETTORE
+104
+NOME
+GATTO
+105
+NOME
+DEMOCRITO
+105
+NOME
+GATTINO
+105
+NOME
+MICIO
+105
+NOME
+SPINOTTO
+106
+NOME
+BANCARELLA
+107
+NOME
+BANCARELLE
+107
+NOME
+NEGOZIO
+108
+NOME
+NEGOZI
+108
+NOME
+PORTICO
+109
+NOME
+PORTICI
+109
+NOME
+PORTICATO
+109
+NOME
+SOTTORIPA
+109
+NOME
+G
+110
+VERBO
+GUARDA
+110
+VERBO
+RIPARA
+111
+VERBO
+FACCIATA
+112
+NOME
+SCALA
+116
+NOME
+SCALE
+116
+NOME
+INDOSSA
+120
+VERBO
+SVESTITI
+121
+VERBO
+TOGLI
+121
+VERBO
+ENTRATA
+126
+NOME
+ANNUSA
+143
+VERBO
+MOBILI
+144
+NOME
+MOBILIO
+144
+NOME
+DECORAZIONE
+145
+NOME
+VERSO
+150
+AVVERBIO
+SCRIVI
+155
+VERBO
+OGGETTO
+156
+NOME
+PAVIMENTO
+159
+NOME
+TERRA
+159
+NOME
+SOLLEVA
+160
+VERBO
+MUOVI
+160
+VERBO
+FUOCO
+164
+NOME
+LIBRERIA
+200
+NOME
+SIEDI
+201
+VERBO
+DORMI
+201
+VERBO
+VESTITI
+202
+NOME
+CHIUDI
+203
+VERBO
+STRUMENTO
+206
+NOME
+STRUMENTI
+206
+NOME
+SOLDI
+208
+NOME
+DENARO
+208
+NOME
+PREGA
+210
+VERBO
+BEVI
+211
+VERBO
+MANGIA
+211
+VERBO
+INGHIOTTI
+211
+VERBO
+ACCENDI
+213
+VERBO
+SPECCHIO
+219
+NOME
+TAPPETO
+228
+NOME
+CORRIMANO
+229
+NOME
+RINGHIERA
+229
+NOME
+SHIBBOLETH
+230
+VERBO
+BUSSA
+236
+VERBO
+BESTEMMIA
+400
+VERBO
+CAZZO
+400
+VERBO
+MERDA
+400
+VERBO
+VAFFANCULO
+400
+VERBO
+CULO
+400
+VERBO
+ACCAREZZA
+406
+VERBO
+COCCOLA
+406
+VERBO
+TOCCA
+406
+VERBO
+BACIA
+406
+VERBO
+ABOUT
+407
+VERBO
+AIUTO
+407
+VERBO
+INFO
+407
+VERBO
+INDIZIO
+408
+NOME
+PICCOLO
+408
+AGGETTIVO
+EMILIA
+409
+NOME
+TE
+409
+NOME
+RICOMINCIA
+987
+VERBO
+LOAD
+988
+VERBO
+CARICA
+988
+VERBO
+SAVE
+989
+VERBO
+SALVA
+989
+VERBO
+XYZZY
+1000
+VERBO
+POI
+9999
+SEPARATORE
+LOCAZIONI
+1
+Ti trovi in una stanza decorata con gran gusto. Il letto è sfatto, ché hai dormito qui la scorsa notte. Un termosifone in ghisa è addossato al muro ad ovest e pende dal soffitto un lampadario a gas. Le pareti della stanza son coperte da carta da parati adorna di motivi floreali con colori delicati, un tappeto di lana ricopre il pavimento. Un catino ed una brocca d'acqua son disposti ai lati di un grande specchio a nord. La tiepida luce del mattino filtra da una finestra ad est.
+
+Stanza d'hotel
+0
+2
+0
+0
+0
+0
+0
+0
+0
+0
+2
+Sei in un corridoio. I muri son foderati di legno e qui i tuoi passi son molto silenziosi, ché stai camminando su un tappeto spesso e morbido di un bel colore bordeaux. Un beccuccio a gas lotta contro l'oscurità e ti fa proiettar una lunga ombra sul pavimento.
+
+Corridoio
+1
+3
+0
+0
+0
+0
+0
+0
+0
+0
+3
+Ti trovi in un ascensore idraulico, chiuso da una porta metallica finemente decorata. C'è uno strano odore: forse il meccanismo è stato lubrificato di recente, o perde dell'olio da qualche parte. Un pannellino lucido in ottone con dei bottoni ti permette di scender al primo piano.
+
+Ascensore
+2
+0
+0
+0
+0
+4
+0
+0
+0
+0
+4
+Sei nella reception del Grand Hotel Isotta. Un pannello ti avvisa che puoi acquistar dei biglietti del treno. Un ascensore idraulico nelle vicinanze reca al piano di sopra, dove ci son le stanze per gli ospiti. Larghe finestre lasciano veder una bella panoramica di via Roma e fanno entrar la delicata luce del tramonto attraverso tende di taffetà. Questo luogo è caloroso ed arredato con gusto.
+
+Reception dell'hotel
+0
+5
+0
+0
+3
+0
+0
+0
+0
+0
+5
+Sei in un viale importante del centro di Genova. Vedi edifici eleganti con negozi lussuosi e le rotaie del tram a vapore, ché una linea passa di qui.
+
+Via Roma
+4
+9
+6
+11
+0
+0
+0
+0
+0
+0
+6
+Sei in una lunga strada rettilinea che sale abbastanza ripidamente verso est.
+
+Via Assarotti
+0
+0
+7
+5
+0
+0
+0
+0
+0
+0
+7
+Sei in una piazza abbastanza grande e piuttosto in alto sulla città, pavimentata con pietre ed attraversata dalle rotaie del tram. Sei in piedi nell'ombra di alberi maestosi ed una leggiera brezza ti porta l'odore del mare.
+
+Piazza Manin
+0
+8
+0
+6
+0
+0
+0
+0
+0
+0
+8
+Sei in piedi davanti al cancello di ingresso del parco di una magnifica villa costruita nel sedicesimo secolo. Sei stata qui ieri sera, ad un ricevimento dato da Eugenio Collovati, conte di Raligotto. C'è una leva che può esser tirata per far suonar un campanello nella villa.
+
+Villa Raligotto
+7
+0
+0
+0
+0
+0
+0
+0
+0
+0
+9
+Sei in una larga piazza circondata da palazzi molto alti, con una statua equestre nella parte nord.
+
+Piazza Deferrari
+5
+0
+0
+10
+0
+0
+0
+0
+0
+0
+10
+Ti trovi in una delle stazioni telegrafiche più importanti della città di Genova, situata in questo magnifico palazzo. Vedi la classica stazione ricevente posta dietro una scrivania: un ricevitore con la strisciolina di carta (la "zona") attivata da un dispositivo ad orologeria, un selettore con spinotti in bronzo ed un tasto telegrafico. Riesci a legger la marca del fabbricante: "Balocco & Ghioni, Genova". Queste cose ti affascinano.
+
+Palazzo Ducale
+11
+0
+9
+0
+0
+0
+0
+0
+0
+0
+11
+Sei in piedi davanti all'edificio che ospita gli archivi amministrativi della città di Genova.
+
+Archivi
+20
+10
+5
+12
+0
+0
+0
+0
+0
+0
+12
+Sei vicino al Porto Franco, all'inizio dei portici di Sottoripa. Bancarelle e negozietti vendono una gran varietà di merci, dalla tipica farinata di ceci cotta sul momento a spezie che arrivano da molto lontano. Il negozio più vicino è un emporio.
+
+Porto Franco
+13
+21
+11
+0
+0
+0
+0
+0
+0
+0
+13
+Sei nella capitaneria di porto, ad un tiro di schioppo dal porto. L'ufficio che riceve il pubblico (un semplice tavolino) è aperto.
+
+Capitaneria di porto
+14
+12
+0
+0
+0
+0
+0
+0
+0
+0
+14
+Sei nella darsena del porto.
+
+Darsena
+16
+13
+0
+0
+0
+0
+0
+0
+0
+0
+16
+Sei in un magazzino immenso. Delle rotaie entrano nell'edificio: ieri mattina, hai lasciato le casse proprio qui, pronte ad esser caricate su un treno a vapore diretto a Torino. Adesso, non c'è più nulla. Un piccolo ufficio interno è presente verso est, dietro ad una porta.
+
+Magazzino
+17
+14
+0
+0
+0
+0
+0
+0
+0
+0
+17
+Sei nell'ufficio della dogana. Hai passato moltissimo tempo qui ieri mattina.
+
+Dogana
+0
+16
+18
+0
+0
+0
+0
+0
+0
+0
+18
+Sei in una grande stazione ferroviaria. Disposta strategicamente nei pressi del porto, è un grande edificio con una facciata neoclassica.
+
+Stazione di Piazza Principe
+0
+0
+22
+17
+0
+0
+0
+0
+0
+0
+19
+Sei in un piccolo ufficetto all'interno del magazzino. C'è una scrivania ed una sedia, alcuni dossier in un archivio ed un cestino in un angolo.
+
+Ufficio
+0
+0
+0
+16
+0
+0
+0
+0
+0
+0
+20
+Sei all'interno degli archivi cittadini. E' un edificio amministrativo, non esattamente aperto al pubblico.
+
+Archivi
+0
+11
+0
+0
+0
+0
+0
+0
+0
+0
+21
+Sei in un negozietto stipato di piccoli attrezzi ed articoli di cancelleria in vendita.
+
+Emporio
+12
+0
+0
+0
+0
+0
+0
+0
+0
+0
+22
+Sei in una piazza molto grande, di fronte alla stazione ferroviaria. C'è un monumento dedicato a Cristoforo Colombo, circondato da un giardino elegante. La piazza è circondata da numerose abitazioni piuttosto grandi.
+
+Piazza Acquaverde
+0
+0
+0
+18
+0
+0
+0
+0
+0
+0
+100
+Oggi è il 27 agosto 1904. Nove mesi fa, tu, Emilia Vittorini, hai raggiunto la Spedizione Archeologica Italiana in Egitto, guidata da Ernesto Schiaparelli, il direttore del museo Egizio di Torino. Adesso sei rientrata in Italia, a Genova: il tuo traghetto a vapore è arrivato trasportando 25 casse in legno che contengono il corredo della tomba della regina Nefertari Meritmut, un vero tesoro! Le casse son partite in treno in direzione di Torino. Mentre erano in viaggio, sei stata invitata ad un sontuoso ricevimento organizzato da un ricco collezionista d'arte, Eugenio Collovati conte di Raligotto. Non si può dire che tu abbia apprezzato la serata...^M^MTuttavia, il ricevimento ha avuto luogo ieri sera: adesso devi prender il treno per Torino ed assicurarti che il tesoro sia arrivato correttamente. Sarò i tuoi occhi ed orecchie. Buona fortuna!^M^MDelle parole d'ordine verranno date a dei momenti importanti del giuoco, non esitar a prender nota. Scrivi 'aiuto' per aver istruzioni.
+
+Introduzione
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+MESSAGGI
+1
+Nello specchio, vedi una giovine, alta circa 1,67 m, con gli occhi azzurri. Sei tu. Nove mesi sotto al lavoro negli scavi sotto l'ardente sole dell'Egitto han lasciato una certa abbronzatura sulla tua pelle. I tuoi capelli, naturalmente castani con riflessi rossastri, son diventati quasi biondi.
+2
+Di certo è stato un letto molto confortevole.
+3
+No. Stai lasciando la stanza. Le lenzuola saranno cambiate comunque.
+4
+Vedi Genova e via Roma, di fuori.
+5
+Fiori e foglie di lauro: molto decorativi!
+6
+E' un moderno termosifone in ghisa, con piedi sottili e decorazioni geometriche. Adesso è freddo, ché è estate.
+7
+Ti sei già lavata stamattina ed indossi i vestiti puliti.
+8
+Ha cinque becchi a gas ed è decorato con foglie di lauro bronzee. Adesso è spento, ma ieri hai notato che la luce emessa dai mantelli al torio era particolarmente vivida.
+9
+C'è un leggero sentore metallico, mischiato all'odore familiare dell'illuminazione a gas.
+10
+Dall'odore non riusciresti a dire se è olio lubrificante o fluido idraulico.
+11
+L'impiegato sorride e chiede il tuo nome. Quando gli rispondi, dice "Signora, abbiamo ricevuto un telegramma per voi questo pomeriggio. Eccolo." Lo ringrazi cordialmente e metti in tasca il telegramma.
+12
+"La vostra stanza è già stata pagata, Signora." E' vero, Raligotto ha insistito per prender a suo carico la stanza in uno dei migliori hotel in città.
+13
+E' un telegramma urgente da Schiaparelli, il direttore del museo Egizio a Torino. "TRENO ARRIVATO STOP UNA CASSA MANCANTE STOP SANDALI REGINA STOP". Quasi ti metti ad urlare mentre stai leggendo: una cassa è stata rubata! Ti monta la rabbia: lo sapevi che non avresti dovuto partecipar a quello stupido ricevimento ed avresti dovuto seguire più da vicino le casse! Decidi di rimaner a Genova per il momento, cercando di capire cos'è successo.
+14
+Invii un telegramma urgente a Schiaparelli "CASSE TUTTE PRESENTI IN TRAGHETTO STOP FORSE RUBATA TRENO STOP INDAGO STOP", al costo di tre monete da una lira d'argento. L'operatrice siede alla stazione telegrafica, mette mano al meccanismo Forcieri del tasto ed inizia a trasmettere. Ritorna poco dopo per dire che il messaggio è stato inviato.
+15
+Dai un'occhiata nel cestino. Fra altri documenti, vedi un foglio di carta strano, forse una lettera, strappato in tanti pezzettini.
+16
+^MMentre stai camminando nella strada, senti un'auto che s'avvicina velocemente dietro di te. I tuoi riflessi ti fanno saltar in fretta a lato e riesci appena ad evitarla. L'auto accelera lontano da te. Mentre senti il cuore batter forte in gola, ti dici che è meglio far attenzione: non sei del tutto sicura che sia stato un incidente. Riesci a legger la targa, comunque. Era qualcosa di simile a GE240 o GE340.
+17
+Ti avvicini all'impiegato e chiedi a proposito della targa dell'auto che ti ha quasi investito: "Non posso certo dirlo a voi, signorinella! Non è che noi si dà queste informazioni alla prima che entra. Ci vuole un ordine ufficiale!" Non descrivo cosa stai pensando, il giuoco diverrebbe inadatto ai minorenni...
+18
+L'impiegato deve aver suppergiù la tua età, ma ha un'espressione sgradevole in viso.
+19
+Non v'è ragione per andartene in giro in città; non sei una turista. Meglio star presso l'hotel.
+20
+La commessa dell'emporio è una vecchia signora con capelli bianchi e sguardo vivace. Probabilmente ha lavorato qui negli ultimi 50 anni.
+21
+Chiedi alla commessa se ha qualcosa per tener insieme i pezzi di carta della lettera. Dopo averla cercata in una scatolina, ti porge un rotolo di carta gommata. Costa 10 centesimi.
+22
+E' uno spesso tappeto di lana. Aiuta a mantener questo luogo caldo in inverno, ma pure d'estate è gradevole camminarci sopra.
+23
+I bottoni son scintillanti!
+24
+Son pulite.
+25
+E' legno di noce.
+26
+Non produce tantissima luce.
+27
+Il meccanismo della porta perde un poco di grasso.
+28
+Non puoi raccoglier il grasso a mani nude. Sporcheresti tutto!
+29
+Adesso è bella unta e scivolosa.
+30
+Usi l'opuscolo per prender un po' di grasso dal pavimento, vicino alla porta.
+31
+L'opuscolo non scivola abbastanza bene per inserirsi fra lo stipite e la porta.
+32
+Qualcuno incaricato della manutenzione ha esagerato nell'ingrassar la porta!
+33
+E' un gran cancello in ferro battuto, decorato con inserti di ottone lucidato. Su uno di essi, noti uno strano simbolo composto da un'ovale allungato, una sorta di "O" con una linea ondulata disposta sulla diagonale dall'estremo superiore sinistro all'estremo inferiore destro.
+34
+Hai già visto questo simbolo! Sul cancello della villa Raligotto. Forse c'è un legame: devi trovar qualcuno che ti aiuti a decifrare la lettera!
+36
+E' una descrizione dei vari servizi offerti dal Grand Hotel Isotta, su un pezzo di cartoncino, relativamente rigido. E' proprio un hotel di lusso! Puoi perfino comperar biglietti del treno qui. Raligotto ha generosamente offerto la stanza.
+40
+L'addetto alla reception è un giovane, relativamente alto, che sorride in maniera composta e professionale.
+41
+L'operatrice telegrafica è una signora sulla quarantina, vestita con l'uniforme delle Regie Poste Italiane.
+44
+Il foglio è strappato in molti pezzetti. Puoi provar a ricomporlo, ma hai bisogno di qualcosa per tener insieme il tutto.
+45
+E' una specie di puzzle, ma sei dotata in queste cose: utilizzi la carta gommata per tener insieme i pezzi e funziona. La lettera è leggibile, adesso e dice "Torino, Agosto 20, 1904. Caro Rovelli, 88 43 23..." e una serie di numeri. E' un codice! Questo è strano... La lettera è firmata "Gran Maestro" seguita da un simbolo con una O ed una linea ondulata, una sorta di S all'interno.
+46
+E' un ufficio abbastanza ordinario come ti aspetteresti di trovar in un'amministrazione: carta intestata, un timbro ufficiale con inchiostro e tampone, etc...
+47
+Questo ti suggerisce un'idea!
+48
+Riflettendo in fretta, dici "Buongiorno, signore, sto cercando l'ora esatta dell'arrivo del traghetto 'Rivania' con cui son arrivata due giorni fa. Vorrei assicurare alcuni beni trasportati e l'assicurazione me lo richiede. Vorreste per cortesia ricercare nei suoi registri e dirmelo?" L'ufficiale risponde pomposamente di aspettare alcuni minuti e se ne va per cercar negli archivi. Devi muoverti in fretta!
+49
+L'ufficiale del porto è ritornato e ti risponde "Signora, il vostro traghetto è attraccato qui nel porto il 24 agosto, precisamente alle ore 5 e 32 pomeridiane." Lo ringrazi, sorridendo.
+50
+Non puoi toccar niente se l'ufficiale è presente!
+51
+Prendi in fretta un foglio di carta intestata e vi metti due timbri. Ciò sarà sufficiente. Hai ancora da scriverci sopra qualcosa, ma lo farai dopo con calma.
+52
+Scrivi una nota in calligrafia elegante sulla carta intestata, dicente che hai accesso autorizzato alle informazioni riservate negli archivi come l'attribuzione delle targhe di circolazione. V'aggiungi poi un po' di firme fantasiose con svolazzi.
+53
+L'ufficiale è un giovinetto. Sembra perfin troppo fiero della sua uniforme.
+54
+Hai bisogno di qualcosa per scrivere...
+55
+L'impiegato prende l'ordine e lo esamina con cura... "Bene... sembra che sia tutto in ordine." Se ne va e ritorna con un registro: è la lista delle targhe automobilistiche registrate in Genova. Dai un'occhiata, era GE240 o GE340. E' facile: GE340 non è ancora attribuita: GE240 Rovelli Antonio, P.za Acquaverde 12. L'impiegato scrive l'indirizzo su un biglietto che ti consegna.
+56
+Il receptionist agita una mano dicendo: "Signora, avete ricevuto un telegramma urgente!" e ve lo consegna. Lo leggi all'istante: Schiaparelli ha risposto al tuo messaggio con "TROVA ROVELLI STOP CAPO COMPAGNIA TRASPORTI FERROVIARI STOP"
+57
+^MTi fermi a pensare... ci son diversi indizi che puntano verso un certo Rovelli: il messaggio di Schiaparelli, la lettera cifrata e la targa dell'auto che ha provato ad investirti. Non può esser una coincidenza. Rovelli è ora a Torino, a quanto pare. Anche tu pensi che puoi trovar più facilmente qualcuno a Torino in grado di decifrar il messaggio e devi sopratutto scoprire chi sia questo "Grande Maestro" ed il significato dello strano simbolo.
+58
+La porta, che s'apre verso l'interno, è chiusa.
+59
+Fai scivolar l'opuscolo cartonato nell'interstizio fra la porta e lo stipite, raggiungendo la serratura. Un materiale più elastico e flessibile del cartoncino sarebbe meglio, ma è una vecchio modello di serratura e non ti resiste a lungo. Riesci a muover lo scrocco e la porta s'apre.
+60
+Ci vuol ben di più di una semplice porta per fermarti!
+61
+Compri i biglietti del treno per Torino e ringrazi il receptionist. Mentre cammini verso la stazione di Piazza Principe pensi che ci son strane forze che si stanno muovendo attorno a questa storia e sei più che determinata a trovar la cassa che è stata rubata. Oltretutto, sei felice di rientrar a casa per ritrovar finalemente la tua famiglia. Prendi il treno e, cullata dai movimenti della carrozza, ti addormenti rapidamente; il tuo ultimo pensiero prima del sonno è gradevole: potrai veder molto presto Democrito, il tuo gattino.
+62
+^MPuoi caricar la seconda parte del giuoco. Usa 'SHIBBOLETH FANFALUCH' per accedervi.^M
+63
+Trovi il numero 12 ed entri nell'atrio del palazzo. C'è un portiere e chiedi di Rovelli: "Ah, non è qui! L'ho visto partire di fretta due ore fa, dicendo che doveva andar a Torino." Lo ringrazi ed esci dal palazzo. Quindi... Rovelli sta andando a Torino?
+64
+Senti un campanello in lontananza, ma nessuno viene ad aprire.
+65
+E' una colonna molto alta, con una statua di Cristoforo Colombo in cima, che indica il mare con la mano.
+66
+Rivolgi il viso verso il sole, chiudendo gli occhi. Senti un piacevole tepore sulla pelle.
+67
+Son disponibili biglietti del treno: Torino, La Spezia, Pisa (P.za Principe) treni speciali per Chiavari (P.za Brignole).
+68
+E' un moderno ed efficiente ascensore idraulico. La macchina a vapore che mette in pressione il fluido dev'esser nel cortile sul retro.
+69
+I negozi vendono soprattutto generi di lusso: non molto utili per quello che stai cercando di fare.
+70
+Un moderno tram a vapore passa di qui ogni 10 minuti.
+71
+Sono ippocastani.
+72
+L'aria sa di iodio e sale, con un leggero sentore di pesce. La aspiri voluttuosamente.
+73
+Raligotto in persona ti ha fatto visitar il parco ieri sera. E' magnifico, ma hai trovato il padrone di casa vacuo, pomposo ed alquanto noioso.
+74
+Molti edifici son occupati da banche. Attività legate all'economia son comuni da queste parti.
+75
+Rappresenta Giuseppe Garibaldi, a cavallo.
+76
+Passan da qui molte linee del tram.
+77
+La piazza è pavimentata con cubetti di porfido.
+78
+C'è una linea d'aria compressa che va verso la villa. Quando tiri la leva, fai scender la pressione e ciò fa sonar un campanello nell'ingresso, facendovi cader sopra un martelletto. Hai notato il meccanismo ieri sera.
+79
+Il ricevitore scrive punti e linee sulla 'zona', un lungo nastro di carta.
+80
+Il tasto è un interruttore che chiude un circuito, permettendo al telegrafo di funzionare.
+81
+Il selettore permette all'operatrice di collegare o scollegare il ricevitore ed il tasto, o anche metter la linea a terra muovendo gli spinotti di ottone.
+82
+Son semplici spinotti di bronzo, lunghi un paio di centimetri, usati dal selettore.
+83
+E' una lunga striscia di carta. Da un lato del ricevitore è bianca, ben avvolta su una bobina. Sull'altro lato è raccolta in un cestino ed è coperta da punti e linee tracciate con inchiostro violaceo.
+84
+E' un ufficio abbastanza ordinario, adatto a ricever clienti.
+85
+E' un palazzone in mattoni, costruito durante il medio evo.
+86
+Questo posto ha un odore interessante che si mesce all'aria marina: cannella, pesce, caffè e farinata appena cotta (a proposito, l'hai assaggiata ieri quando sei arrivata a Genova e ti è piaciuta).
+87
+Le bancarelle vendono pesce fresco, spezie e cibo da strada. Non hai fame, ora.
+88
+Vendono un sacco di cose che ora non ti interessano. Comunque, noti un piccolo emporio verso sud.
+89
+Un gran bel porticato!
+92
+Esamina con cura ogni oggetto. Parla con le persone. Annusa. Disegna una mappa.
+93
+Una porta chiusa non fermerà Emilia, se ha con sé una scheda ben oleata.
+94
+E' un ufficetto dedicato ai compiti amministrativi.
+95
+Queste rotaie permettono ai facchini di caricar le merci direttamente sul treno. Molto intelligente!
+96
+No, macchierebbe dappertutto!
+97
+E' una penna d'oca e c'è una piccola quantità di inchiostro blu.
+98
+Sulla scrivania, ci son i dossier con le bollette dei beni caricati sul treno durante l'ultima settimana. Come le altre, anche la cassa scomparsa è debitamente registrata a destinazione di Torino.
+99
+E' una gran facciata con un arco sostenuto da sei colonne e decorato con statue di marmo.
+100
+Fiorito!
+101
+Acqua salmastra, pesce ed un sottofondo di fumo di carbone.
+102
+Tutto ciò che hai bisogno per la tua toeletta mattutina.
+103
+Scrivi anche dove va messa la brochure.
+104
+V'è scritto "GE240 Rovelli Antonio, P.za Acquaverde 12." Val la pena di visitarlo...
+105
+Ha l'aria ufficiale.
+106
+Prima di profferir verbo, trova qualcosa da dire...
+107
+Parla con il receptionist.
+108
+Usa 'abbandona' per uscire dal giuoco.
+109
+"Il piacere è mio, Signora"
+110
+Grandi case ed altri edifici circondano la piazza, han tutti un numero civico.
+231
+Potresti provare, ma non funzionerà.
+237
+Non v'è ragione per farlo.
+400
+No. Non sei stanca.
+401
+Non v'è bisogno di questo, ora.
+407
+Questo giuoco è un'avventura testuale. Leggi con cura le descrizioni e scrivi comandi come 'esamina il letto'. Scrivi 'nord', 'sud', 'est', 'ovest' per muoverti nella direzione desiderata. Son possibili abbreviazioni, come 'x' per 'esamina', 'g' per 'guarda' (ovvero descrivi nuovamente dove ti trovi), 'i' per 'inventario', 'n' per 'nord' e così via. Per uscire dal giuoco, scrivi 'abbandona'. Per ricominciare, scrivi 'ricomincia'. Se vuoi una mano, prova a scriver 'indizio'.
+504
+Prego, continua pure se lo desideri... Mi son fatta il callo ad insulti ed ingiurie molti anni fa.
+518
+Potrai ammirarti meglio con uno specchio.
+900
+Puoi comprar qualche oggettino.
+901
+No, usali per comprar qualcosa.
+902
+Prova un'azione più specifica.
+904
+Discuti con la commessa: le chiedi qualcosa con cui scrivere, ma dispone solo di inchiostro nero e sai che negli ordini ufficiali viene usato quello blu. Dovrai trovarlo altrove!
+905
+Parla con la commessa se vuoi comperar qualcosa.
+913
+Avresti bisogno di qualcosa su cui scrivere...
+996
+Non vedo nulla di interessante.
+997
+Non avverti nulla in particolare, salvo una tenue fragranza di lavanda che proviene dai tuoi vestiti.
+998
+Ti senti strana, un po' come se diventassi leggiera leggiera. Dopo un po', questa sensazione svanisce e tutto ridiviene normale.
+1000
+Va bene.
+1001
+Fatto.
+1002
+Fatto.
+1003
+a
+1004
+a
+1005
+Non puoi prenderlo!
+1006
+Non puoi farlo!
+1007
+Non l'hai con te!
+1008
+Non puoi andar da quella parte!
+1009
+Prego?
+1010
+Non puoi.
+1011
+Ce l'hai già con te.
+1012
+Cosa vuoi fare?
+1013
+E' scuro, non si vede nulla.
+1018
+Indossi 
+1019
+L'hai già indossato.
+1020
+Puoi andare: 
+1021
+nord
+1022
+sud
+1023
+est
+1024
+ovest
+1025
+su
+1026
+giù
+1027
+
+1028
+
+1029
+
+1030
+
+1031
+Puoi notare: 
+1032
+Hai con te: 
+1033
+Non porti nulla con te.
+1035
+
+OGGETTI
+32
+
+Carta intestata
+0
+0
+0
+FALSE
+FALSE
+33
+
+Timbro ufficiale
+0
+0
+0
+FALSE
+FALSE
+34
+
+Carta intestata, timbrata
+0
+0
+0
+FALSE
+FALSE
+35
+
+Una penna e calamaio
+0
+0
+19
+FALSE
+FALSE
+36
+
+Una brochure dell'hotel
+0
+0
+1
+FALSE
+FALSE
+37
+
+Un po' di grasso
+0
+0
+0
+FALSE
+FALSE
+38
+
+Biglietto con indirizzo
+0
+0
+0
+TRUE
+FALSE
+40
+
+Il receptionist
+0
+0
+4
+TRUE
+FALSE
+41
+
+L'operatrice telegrafica
+0
+0
+10
+TRUE
+FALSE
+42
+
+Un telegramma urgente da Schiaparelli
+0
+0
+0
+FALSE
+FALSE
+43
+
+Carta gommata
+0
+0
+0
+FALSE
+FALSE
+44
+
+Foglio strappato
+0
+0
+0
+FALSE
+FALSE
+45
+
+Lettera ricomposta
+0
+0
+0
+FALSE
+FALSE
+46
+
+Impiegato degli archivi
+0
+0
+20
+TRUE
+FALSE
+47
+
+Commessa dell'emporio
+0
+0
+21
+TRUE
+FALSE
+48
+
+Ordine falsificato
+0
+0
+0
+FALSE
+FALSE
+49
+
+Ufficiale della capitaneria
+0
+0
+13
+TRUE
+FALSE
+208
+
+Una piccola quantità di denaro
+0
+0
+1500
+FALSE
+FALSE
+FINEDATI

@@ -1,0 +1,1846 @@
+AWS
+VERSIONE
+3.0
+0
+7
+7
+0
+I passi della regina, parte 2
+Davide Bucci
+Versione 0.2, Gennaio 2022
+
+1
+
+0
+0
+102
+FALSE
+0
+0
+CONDIZIONIHI
+IF AT 101 THEN PRESSKEY GOTO 30 ENDIF Print the introduction and wait a key.
+IF NOTAT 39 AND SET? 86 AND RES? 88 THEN TO 175 0 ENDIF Antonia leaves.
+IF AT 39 AND RES? 86 THEN MESS 238 SET 86 ENDIF Talk to Antonia.
+IF AT 30 AND SET? 89 AND SET? 93 AND SET? 86 AND RES? 87 THEN MESS 243 TO 178 1500 SET 87 ENDIF Receive telegram from Antonia.
+CONDIZIONILOW
+if verb 70 and noun 409 then mess 518 wait endif
+if verb 73 then quit endif
+if verb 74 or verb 0 and noun 72 then inve wait endif
+if verb 987 then restart endif
+if verb 110 then look wait endif
+IF verb 100 OR vbnoeq 0 AND noun 80 THEN nord WAIT ENDIF  VAI  NORD
+IF verb 100 OR vbnoeq 0 AND noun 81 THEN sud WAIT ENDIF  VAI  SUD
+IF verb 100 OR vbnoeq 0 AND noun 82 THEN est WAIT ENDIF  VAI  EST
+IF verb 100 OR vbnoeq 0 AND noun 83 THEN ovest WAIT ENDIF  VAI OVEST
+IF verb 100 OR vbnoeq 0 AND noun 84 THEN alto WAIT ENDIF  VAI ALTO
+IF verb 100 OR vbnoeq 0 AND noun 85 THEN basso WAIT ENDIF  VAI BASSO
+IF verb 201 THEN MESS 400 WAIT ENDIF Sleep.
+IF verb 12 and noun 10 THEN MESS 401 WAIT ENDIF Open window -> no.
+IF NOUN 9 OR NOUN 122 AND VERB 70 THEN MESS 307 WAIT ENDIF Examine key/goggles.
+IF verb 1000 then MESS 998 WAIT ENDIF XYZZY.
+IF verb 400 THEN mess 504 WAIT ENDIF Curse.
+IF VERB 143 THEN mess 997 WAIT ENDIF Smell...
+IF VERB 111 AND NOUN 57 AND AVAI 177 AND AVAI 180 THEN MESS 910 WAIT ENDIF *** Added in v. 1.1 Try to repair book with fascicule.
+IF VERB 55 AND NO1EQ 180 AND NO2EQ 57 AND AVAI 177 AND AVAI 180 THEN MESS 910 WAIT ENDIF *** Added in v. 1.1 Try to repair book with fascicule.
+IF VERB 70 AND NOUN 182 AND AVAI 182 THEN MESS 308 WAIT ENDIF Examine visit card.
+IF VERB 70 AND NOUN 181 AND AVAI 181 THEN MESS 261 WAIT ENDIF Examine car
+IF VERB 75 AND ACTOR 176 AND AVAI 176 AND RES? 90 AND NOTAVAI 177 THEN MESS 240 WAIT ENDIF Talk with librarian
+IF VERB 75 AND ACTOR 176 AND AVAI 176 AND SET? 90 AND NOTAVAI 177 THEN MESS 249 TO 177 1500 WAIT ENDIF Talk with librarian, wants Corpus Hermeticum
+IF verb 406 OR verb 77 AND noun 105 AND avai 105 THEN mess 232 WAIT ENDIF  Caress the cat and he is here
+IF verb 406 AND noun 105 THEN mess 505 WAIT ENDIF Caress the cat, but he's not here
+IF verb 70 and noun 105 AND here 105 THEN mess 233 WAIT ENDIF Examine the cat
+IF VERB 211 OR VERB 406 OR VERB 67 THEN mess 401 WAIT ENDIF Touch..., Drink..., Wash...
+IF VERB 70 AND NOUN 45 AND AVAI 45 AND RES? 29 THEN MESS 45 WAIT ENDIF Read again the letter
+IF VERB 70 AND NOUN 301 AND AVAI 171 THEN MESS 301 WAIT ENDIF Read message from Antonio Milieri
+IF VERB 75 AND ACTOR 170 AND RES? 100 THEN SET 100 TO 171 1500 MESS 300 WAIT ENDIF Discuss with your father.
+IF VERB 70 AND ACTOR 170 AND AVAI 170 THEN MESS 234 WAIT ENDIF Examine your father.
+IF AT 31 OR AT 35 OR AT 36 OR AT 40 AND VERB 70 AND NOUN 109 THEN MESS 265 WAIT ENDIF
+IF AT 40 OR AT 46 AND VERB 70 AND NOUN 115 THEN MESS 299 WAIT ENDIF Examine bridge
+IF VERB 70 AND NOUN 180 AND AVAI 180 THEN MESS 257 WAIT ENDIF Examine fascicule.
+IF VERB 50 AND NO1GT 169 AND NO1LT 200 THEN GET NO1 OKAY ENDIF Take an object.
+IF VERB 55 AND NO1GT 169 AND NO1LT 200 THEN DROP NO1 OKAY ENDIF Drop an object.
+IF VERB 70 AND ACTOR 175 AND AVAI 175 THEN MESS 239 WAIT ENDIF Examine Antonia.
+IF VERB 75 AND ACTOR 174 AND AVAI 174 AND RES? 92 THEN MESS 235 SET 92 TO 182 1500 WAIT ENDIF Talk to Temistocle.
+IF VERB 75 AND ACTOR 174 AND AVAI 174 AND SET? 92 THEN MESS 309 WAIT ENDIF Talk to Temistocle.
+IF VERB 70 AND NOUN 42 AND AVAI 178 THEN SET 88 TO 175 42 MESS 244 WAIT ENDIF Read telegram, place Antonia in caffè Fiorio.
+IF VERB 407 THEN MESS 407 WAIT ENDIF
+IF VERB 70 AND NOUN 57 AND AVAI 177 THEN MESS 251 SET 94 WAIT ENDIF Read Corpus hermeticum, but pages are missing.
+IF AT 33 OR AT 39 AND VERB 70 AND NOUN 10 THEN MESS 280 WAIT ENDIF Examine window
+IF AT 40 OR AT 46 AND VERB 70 AND NOUN 114 THEN MESS 298 WAIT ENDIF Examine Po river
+IF VERB 70 AND NOUN 79 THEN LOOK WAIT ENDIF Examine room = look.
+IF VERB 15 THEN MESS 902 WAIT ENDIF *** Version 1.1 - "Use" -> be more specific!
+IF VERB 210 THEN MESS 231 WAIT ENDIF Pray.
+IF VERB 70 AND ACTOR 174 AND AVAI 174 THEN MESS 279 WAIT ENDIF Examine Temistocle
+IF VERB 70 THEN MESS 996 WAIT ENDIF Examine (without a known object).
+IF NOUN 408 AND RES? 85 THEN MESS 289 WAIT ENDIF Hint 1
+IF NOUN 408 AND RES? 89 THEN MESS 290 WAIT ENDIF Hint 2
+IF NOUN 408 THEN MESS 291 WAIT ENDIF Hint 3
+IF VERB 988 THEN LOAD WAIT ENDIF Load
+IF VERB 989 THEN SAVE WAIT ENDIF Save
+IF VERB 76 THEN MESS 108 WAIT ENDIF Exit/Quit -> use "bye"
+CONDIZIONILOCALI
+30
+IF VERB 50 OR VERB 56  AND NOUN 181 THEN TO 181 31 GOTO 31 WAIT ENDIF Take car and go to city centre.
+30
+IF VERB 74 OR VERB 66 AND NOUN 45 AND ACTOR 170 AND AVAI 45 THEN MESS 236 SET 85 WAIT ENDIF Show letter to father.
+30
+IF VERB 74 OR VERB 66 AND NOUN 45 AND AVAI 45 THEN MESS 263 WAIT ENDIF Show letter (to whom???)
+30
+IF VERB 70 AND NOUN 98 THEN MESS 262 WAIT ENDIF Examine villa.
+31
+IF VERB 50 OR VERB 56 AND NOUN 181 THEN TO 181 30 GOTO 30 WAIT ENDIF Take the car
+31
+IF VERB 56 AND NOUN 14 THEN TO 181 30 GOTO 30 WAIT ENDIF *** Version 1.1: Drive home
+31
+IF VERB 70 AND NOUN 98 THEN MESS 264 WAIT ENDIF Examine castle
+32
+IF VERB 100 OR VERB 70 AND NOUN 169 THEN MESS 276 WAIT ENDIF Go to/examine theatre
+32
+IF VERB 100 OR VERB 70 AND NOUN 204 THEN MESS 277 WAIT ENDIF Go to/examine restaurant
+32
+IF VERB 70 AND NOUN 98 THEN MESS 278 WAIT ENDIF Examine palazzo Carignano
+33
+IF VERB 88 THEN MESS 281 WAIT ENDIF Buy... -> You are not here to visit the museum.
+34
+IF VERB 70 AND NOUN 237 AND RES? 117 THEN MESS 256 TO 180 34 SET 117 WAIT ENDIF Examine girders, find missing pages
+34
+IF VERB 70 AND ACTOR 179 THEN MESS 250 SET 93 WAIT ENDIF Examine corpse
+34
+IF VERB 70 AND NOUN 118 THEN MESS 305 WAIT ENDIF Examine view
+35
+IF VERB 70 AND NOUN 98 THEN MESS 266 WAIT ENDIF Examine shops.
+35
+IF VERB 143 THEN MESS 267 WAIT ENDIF Smell (bread).
+36
+IF VERB 70 AND NOUN 98 THEN MESS 274 WAIT ENDIF Examine shop.
+36
+IF VERB 70 AND NOUN 168 THEN MESS 275 WAIT ENDIF Examine poster.
+37
+IF VERB 100 OR vbnoeq 0 AND noun 81 and res? 85 THEN mess 237 WAIT ENDIF  VAI  SUD.
+37
+IF VERB 70 AND NOUN 205 THEN MESS 292 WAIT ENDIF Examine stucco.
+38
+IF NOUN 82 OR NOUN 83 THEN MESS 237 WAIT ENDIF Go in a direction outside the game.
+38
+IF VERB 70 AND NOUN 96 THEN MESS 293 WAIT ENDIF Examine statue.
+38
+IF NOUN 159 OR NOUN 23 AND VERB 70 THEN MESS 294 WAIT ENDIF Examine floor/decorations.
+39
+IF VERB 70 AND NOUN 96 THEN MESS 295 WAIT ENDIF Examine statue.
+39
+IF VERB 70 AND NOUN 238 THEN MESS 296 WAIT ENDIF Examine workbench.
+39
+IF VERB 70 AND NOUN 23 THEN MESS 297 WAIT ENDIF Examine walls.
+39
+IF VERB 75 THEN MESS 237 WAIT ENDIF Talk with Antonia again.
+40
+IF VERB 70 AND NOUN 109 THEN MESS 302 WAIT ENDIF Examine arcades
+41
+IF VERB 70 AND NOUN 4 THEN MESS 286 WAIT ENDIF Examine door.
+41
+IF VERB 70 AND NOUN 96 THEN MESS 287 WAIT ENDIF Examine genie.
+41
+IF VERB 70 OR VERB 111 AND NOUN 113 THEN MESS 288 WAIT ENDIF Examine repair works.
+42
+IF VERB 75 AND ACTOR 175 AND AVAI 180 AND AVAI 177 THEN MESS 260 EXIT WAIT ENDIF Talk to Antonia and decipher letter
+42
+IF NOUN 180 OR NOUN 57 AND VERB 66 AND ACTOR 175 AND AVAI 180 AND AVAI 177 THEN MESS 260 EXIT WAIT ENDIF Give book or fascicule to Antonia. *** Version 1.1.1
+42
+IF VERB 66 AND NOUN 180 AND NOTAVAI 177 THEN MESS 914 WAIT ENDIF Give fascicule to Antonia -> incomplete *** Version 1.1.1
+42
+IF VERB 75 AND ACTOR 175 AND AVAI 175 AND RES? 90 THEN MESS 245 PRESSKEY MESS 246 SET 90 WAIT ENDIF Discuss with Antonia, learn about Orientis Sapientia
+42
+IF VERB 75 AND ACTOR 175 AND AVAI 175 AND SET? 90 THEN MESS 310 WAIT ENDIF Discuss with Antonia, learn about Orientis Sapientia
+42
+IF VERB 143 THEN MESS 268 WAIT ENDIF Smell.
+42
+IF VERB 70 AND NOUN 58 THEN MESS 269 WAIT ENDIF Examine chandelier.
+42
+IF VERB 70 AND NOUN 23 THEN MESS 270 WAIT ENDIF Examine decorations.
+42
+IF VERB 70 AND NOUN 166 THEN MESS 271 WAIT ENDIF Examine upholstery.
+42
+IF VERB 70 AND NOUN 167 THEN MESS 272 WAIT ENDIF Examine pads/chairs.
+42
+IF VERB 211 THEN MESS 273 WAIT ENDIF Drink...
+42
+IF VERB 50 AND NOUN 168 THEN MESS 273 WAIT ENDIF Take a coffee/chocolate...
+43
+IF VERB 70 OR VERB 111 AND NOUN 113 THEN MESS 284 WAIT ENDIF Examine repair works...
+43
+IF VERB 70 AND ACTOR 176 THEN MESS 285 WAIT ENDIF Examine librarian
+43
+IF VERB 143 THEN MESS 306 WAIT ENDIF Smell
+44
+IF VERB 12 OR VERB 70 AND NOUN 4 AND RES? 94 AND RES? 91 THEN MESS 252 WAIT ENDIF Examine/try to open the door.
+44
+IF VERB 12 OR VERB 70 AND NOUN 4 AND RES? 94 AND SET? 91 THEN MESS 252 MESS 254 WAIT ENDIF Examine/try to open the door, seen Pizzarrotti.
+44
+IF VERB 15 OR VERB 55 AND NOUN 146 AND RES? 94 AND SET? 91 THEN MESS 253 SET 94 SETCONN 44 1 45 WAIT ENDIF Open the door with the Fibonacci sequence
+44
+IF VERB 184 AND NO1EQ 185 AND NO2EQ 186 AND ACTOR 187 AND RES? 94 AND SET? 91 THEN MESS 253 SET 94 SETCONN 44 1 45 WAIT ENDIF Open the door with the 3 5 8 13 sequence
+44
+IF VERB 15 OR VERB 55 THEN MESS 311 WAIT ENDIF Try + numbers -> hint
+44
+IF VERB 15 OR VERB 55 AND NOUN 146 AND RES? 94 AND RES? 91 THEN MESS 258 WAIT ENDIF Open the door with the Fibonacci sequence, you haven't seen Pizzarrotti, yet
+45
+IF VERB 70 AND NOUN 96 THEN MESS 242 SET 89 WAIT ENDIF Examine genie
+46
+IF VERB 50 AND NOUN 99 AND SET? 92 AND RES? 91 THEN MESS 247 PRESSKEY MESS 248 SET 91 WAIT ENDIF Take the tram and meet Pizzarrotti.
+46
+IF VERB 50 AND NOUN 99 AND SET? 91 THEN MESS 259 WAIT ENDIF Take the tramway a second time.
+46
+IF VERB 50 AND NOUN 99 THEN MESS 237 WAIT ENDIF Take the tram without knowing about Pizzarrotti.
+46
+IF VERB 70 AND NOUN 116 THEN MESS 303 WAIT ENDIF Examine church.
+46
+IF VERB 70 AND NOUN 117 OR NOUN 99 THEN MESS 304 WAIT ENDIF Examine tramway stop/rail
+47
+IF VERB 70 AND NOUN 96 THEN MESS 282 WAIT ENDIF Examine statue.
+47
+IF VERB 70 AND NOUN 60 THEN MESS 283 WAIT ENDIF Examine garden.
+102
+IF VERB 230 AND NOUN 231 THEN GOTO 101 WAIT ENDIF Ask for password
+DIZIONARIO
+FAI
+1
+VERBO
+TERMOSIFONE
+2
+NOME
+RADIATORE
+2
+NOME
+TAPPEZZERIE
+3
+NOME
+TAPPEZZERIA
+3
+NOME
+DISEGNI
+3
+NOME
+MOTIVI
+3
+NOME
+PORTA
+4
+NOME
+CANCELLO
+4
+NOME
+GRASSO
+5
+NOME
+LUCE
+6
+NOME
+CHIAVE
+9
+NOME
+TASTO
+9
+NOME
+FINESTRA
+10
+NOME
+FINESTRE
+10
+NOME
+CASSETTO
+11
+NOME
+CASSETTI
+11
+NOME
+APRI
+12
+VERBO
+ARMADIO
+13
+NOME
+CASA
+14
+NOME
+CROCETTA
+14
+NOME
+USA
+15
+VERBO
+PREMI
+15
+VERBO
+ATTIVA
+15
+VERBO
+CORNICE
+17
+NOME
+LETTO
+18
+NOME
+DOSSIER
+20
+NOME
+TARGA
+21
+NOME
+PLACCA
+21
+NOME
+BOTTONE
+21
+NOME
+BOTTONI
+21
+NOME
+TENDE
+22
+NOME
+TAFFETA
+22
+NOME
+MURO
+23
+NOME
+MURI
+23
+NOME
+PARETE
+23
+NOME
+PARETI
+23
+NOME
+PANNELLO
+23
+NOME
+PANNELLINO
+23
+NOME
+PANNELLI
+23
+NOME
+IMPIALLICCIATURA
+23
+NOME
+LEGNO
+23
+NOME
+TRAMONTO
+31
+NOME
+CESTINO
+32
+NOME
+SPAZZATURA
+32
+NOME
+PATTUMIERA
+32
+NOME
+FRANCOBOLLO
+33
+NOME
+INCHIOSTRO
+34
+NOME
+CALAMAIO
+34
+NOME
+PENNA
+34
+NOME
+BROCHURE
+36
+NOME
+OPUSCOLO
+36
+NOME
+VOLANTINO
+36
+NOME
+RECEPTIONIST
+40
+ATTORE
+COMMESSA
+41
+ATTORE
+VENDITRICE
+41
+ATTORE
+TELEGRAFISTA
+41
+ATTORE
+OPERATRICE
+41
+ATTORE
+DONNA
+41
+ATTORE
+IMPIEGATA
+41
+ATTORE
+TELEGRAMMA
+42
+NOME
+CARTA
+43
+NOME
+FOGLIO
+44
+NOME
+PEZZI
+44
+NOME
+LETTERA
+45
+NOME
+OPERATORE
+46
+ATTORE
+UOMO
+46
+ATTORE
+IMPIEGATO
+46
+ATTORE
+ORDINE
+48
+NOME
+UFFICIALE
+49
+ATTORE
+PRENDI
+50
+VERBO
+AFFERRA
+50
+VERBO
+RACCOGLI
+50
+VERBO
+TAVOLO
+51
+NOME
+SCRIVANIA
+51
+NOME
+TAVOLINO
+51
+NOME
+UFFICIO
+51
+NOME
+UFFICETTO
+51
+NOME
+BOX
+51
+NOME
+RINGRAZIA
+52
+VERBO
+LASCIA
+55
+VERBO
+MOLLA
+55
+VERBO
+INFILA
+55
+VERBO
+INSERISCI
+55
+VERBO
+METTI
+55
+VERBO
+LANCIA
+55
+VERBO
+PROVA
+55
+VERBO
+GUIDA
+56
+VERBO
+ENTRA
+56
+VERBO
+CORPUS
+57
+NOME
+LIBRO
+57
+NOME
+LIBRI
+57
+NOME
+LAMPADARIO
+58
+NOME
+LAMPADA
+58
+NOME
+LAMPADE
+58
+NOME
+BRUCIATORE
+58
+NOME
+BRUCIATORI
+58
+NOME
+BECCO
+58
+NOME
+BECCHI
+58
+NOME
+BECCUCCIO
+58
+NOME
+BECCUCCI
+58
+NOME
+CATINO
+59
+NOME
+CARAFFA
+59
+NOME
+BROCCA
+59
+NOME
+GIARDINO
+60
+NOME
+GIARDINETTO
+60
+NOME
+GIARDINETTI
+60
+NOME
+FIORE
+62
+NOME
+FIORI
+62
+NOME
+DAI
+66
+VERBO
+LAVA
+67
+VERBO
+PULISCI
+67
+VERBO
+12
+68
+NOME
+DODICI
+68
+NOME
+TIRA
+69
+VERBO
+SPINGI
+69
+VERBO
+ESAMINA
+70
+VERBO
+ESAM
+70
+VERBO
+EX
+70
+VERBO
+X
+70
+VERBO
+LEGGI
+70
+VERBO
+CERCA
+70
+VERBO
+MANIGLIA
+71
+NOME
+LEVA
+71
+NOME
+CAMPANELLO
+71
+NOME
+I
+72
+NOME
+INV
+72
+NOME
+INVE
+72
+NOME
+INVENTARIO
+72
+NOME
+ABBANDONA
+73
+VERBO
+MOSTRA
+74
+VERBO
+CHIACCHERA
+75
+VERBO
+PARLA
+75
+VERBO
+CHIEDI
+75
+VERBO
+ESCI
+76
+VERBO
+SCAPPA
+76
+VERBO
+GIOCA
+77
+VERBO
+SUONA
+77
+VERBO
+ROMPI
+78
+VERBO
+DISTRUGGI
+78
+VERBO
+STANZA
+79
+NOME
+N
+80
+NOME
+NORD
+80
+NOME
+S
+81
+NOME
+SUD
+81
+NOME
+E
+82
+NOME
+EST
+82
+NOME
+O
+83
+NOME
+OVEST
+83
+NOME
+ABOVE
+84
+NOME
+U
+84
+NOME
+SU
+84
+NOME
+SOPRA
+84
+NOME
+SOTTO
+85
+NOME
+GIU
+85
+NOME
+BASSO
+85
+NOME
+COMPRA
+88
+VERBO
+STATUA
+96
+NOME
+STATUE
+96
+NOME
+MONUMENTO
+96
+NOME
+GENIO
+96
+NOME
+ANGELO
+96
+NOME
+ASCENSORE
+97
+NOME
+NEGOZIO
+98
+NOME
+NEGOZI
+98
+NOME
+NEGOZIETTI
+98
+NOME
+NEGOZIETTO
+98
+NOME
+CARIGNANO
+98
+NOME
+PALAZZO
+98
+NOME
+PALAZZI
+98
+NOME
+CASE
+98
+NOME
+CASTELLO
+98
+NOME
+VILLA
+98
+NOME
+TRAM
+99
+NOME
+ROTAIE
+99
+NOME
+ROTAIA
+99
+NOME
+VAI
+100
+VERBO
+CORRI
+100
+VERBO
+CAMMINA
+100
+VERBO
+ALBERO
+101
+NOME
+ALBERI
+101
+NOME
+PARCO
+101
+NOME
+PIETRA
+102
+NOME
+PIETRE
+102
+NOME
+RICEVITORE
+103
+NOME
+TELEGRAFO
+103
+NOME
+STAZIONE
+103
+NOME
+SELETTORE
+104
+NOME
+GATTO
+105
+NOME
+DEMOCRITO
+105
+NOME
+GATTINO
+105
+NOME
+MICIO
+105
+NOME
+SPINOTTO
+106
+NOME
+BANCARELLA
+107
+NOME
+BANCARELLE
+107
+NOME
+PORTICO
+109
+NOME
+PORTICI
+109
+NOME
+PORTICATO
+109
+NOME
+SOTTORIPA
+109
+NOME
+G
+110
+VERBO
+GUARDA
+110
+VERBO
+RIPARA
+111
+VERBO
+FACCIATA
+112
+NOME
+LAVORO
+113
+NOME
+LAVORI
+113
+NOME
+FIUME
+114
+NOME
+PO
+114
+NOME
+PONTE
+115
+NOME
+CHIESA
+116
+NOME
+BASILICA
+116
+NOME
+MADRE
+116
+NOME
+SCALA
+116
+NOME
+SCALINATA
+116
+NOME
+SCALINI
+116
+NOME
+STOP
+117
+NOME
+VISTA
+118
+NOME
+MONTAGNE
+118
+NOME
+ALPI
+118
+NOME
+MONTAGNA
+118
+NOME
+INDOSSA
+120
+VERBO
+WEAR
+120
+VERBO
+SVESTITI
+121
+VERBO
+SVESTI
+121
+VERBO
+TOGLI
+121
+VERBO
+OCCHIALI
+122
+NOME
+OCCHIALONI
+122
+NOME
+ENTRATA
+126
+NOME
+ANNUSA
+143
+VERBO
+MOBILI
+144
+NOME
+MOBILIO
+144
+NOME
+FIBONACCI
+146
+NOME
+A
+150
+AVVERBIO
+SCRIVI
+155
+VERBO
+OGGETTO
+156
+NOME
+PAVIMENTO
+159
+NOME
+SUOLO
+159
+NOME
+MARMO
+159
+NOME
+SOLLEVA
+160
+VERBO
+MUOVI
+160
+VERBO
+FUOCO
+164
+NOME
+IMBOTTITURA
+166
+NOME
+PAD
+167
+NOME
+PADS
+167
+NOME
+SEDIA
+167
+NOME
+SEDIE
+167
+NOME
+CAFFE
+168
+NOME
+CIOCCOLATO
+168
+NOME
+BICERIN
+168
+NOME
+VERMOUTH
+168
+NOME
+VINO
+168
+NOME
+BICCHIERE
+168
+NOME
+ACQUA
+168
+NOME
+CAPPUCCINO
+168
+NOME
+POSTER
+168
+NOME
+TEATRO
+169
+NOME
+PADRE
+170
+ATTORE
+PAPA
+170
+ATTORE
+BABBO
+170
+ATTORE
+AUGUSTO
+170
+ATTORE
+TEMISTOCLE
+174
+ATTORE
+GUARDIANO
+174
+ATTORE
+ANTONIA
+175
+ATTORE
+RIVETTI
+175
+ATTORE
+BIBLIOTECARIO
+176
+ATTORE
+CADAVERE
+179
+ATTORE
+CORPO
+179
+ATTORE
+ROVELLI
+179
+ATTORE
+FASCICOLO
+180
+NOME
+PAGINE
+180
+NOME
+AUTO
+181
+NOME
+AUTOMOBILE
+181
+NOME
+51
+181
+NOME
+BIGLIETTO
+182
+NOME
+3
+184
+VERBO
+5
+185
+NOME
+8
+186
+NOME
+13
+187
+ATTORE
+BIBLIOTECA
+200
+NOME
+SIEDI
+201
+VERBO
+DORMI
+201
+VERBO
+VESTI
+202
+NOME
+CHIUDI
+203
+VERBO
+RISTORANTE
+204
+NOME
+STUCCO
+205
+NOME
+STUCCHI
+205
+NOME
+UTENSILE
+206
+NOME
+UTENSILI
+206
+NOME
+PREGA
+210
+VERBO
+BEVI
+211
+VERBO
+MANGIA
+211
+VERBO
+INGHIOTTI
+211
+VERBO
+ACCENDI
+213
+VERBO
+SPECCHIO
+219
+NOME
+TAPPETO
+228
+NOME
+CORRIMANO
+229
+NOME
+RINGHIERA
+229
+NOME
+SHIBBOLETH
+230
+VERBO
+FANFALUCH
+231
+NOME
+BUSSA
+236
+VERBO
+TRAVE
+237
+NOME
+TRAVI
+237
+NOME
+SBARRE
+237
+NOME
+SBARRA
+237
+NOME
+BANCONE
+238
+NOME
+BANCO
+238
+NOME
+MESSAGGIO
+301
+NOME
+MISSIVA
+301
+NOME
+BESTEMMIA
+400
+VERBO
+CAZZO
+400
+VERBO
+MERDA
+400
+VERBO
+VAFFANCULO
+400
+VERBO
+CULO
+400
+VERBO
+ACCAREZZA
+406
+VERBO
+COCCOLA
+406
+VERBO
+TOCCA
+406
+VERBO
+BACIA
+406
+VERBO
+ABOUT
+407
+VERBO
+AIUTO
+407
+VERBO
+INFO
+407
+VERBO
+INDIZIO
+408
+NOME
+PICCOLO
+408
+AGGETTIVO
+EMILIA
+409
+NOME
+TE
+409
+NOME
+RICOMINCIA
+987
+VERBO
+LOAD
+988
+VERBO
+CARICA
+988
+VERBO
+SAVE
+989
+VERBO
+SALVA
+989
+VERBO
+XYZZY
+1000
+VERBO
+POI
+9999
+SEPARATORE
+LOCAZIONI
+30
+Sei nella villa di famiglia, alla Crocetta. Puoi guidar l'automobile se vuoi andar in centro città.
+
+Villa Vittorini
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+31
+Una gran piazza con un castello in mezzo, circondata da portici. Puoi guidar l'automobile da qui per andar a casa tua alla Crocetta.
+
+Piazza Castello
+0
+32
+35
+0
+0
+0
+0
+0
+0
+0
+32
+Puoi veder l'ingresso di un teatro, il Palazzo Carignano ed un ristorante tradizionale.
+
+Piazza Carignano
+31
+33
+47
+0
+0
+0
+0
+0
+0
+0
+33
+Vedi la biglietteria alla tua destra. Una finestra ad ovest illumina il luogo. Vedi anche il cortile interno del museo.
+
+Ingresso del museo egizio
+32
+0
+0
+0
+0
+0
+0
+0
+0
+0
+34
+Un gran numero di scalini salgono fino al Tempietto, sulla cima della Mole Antonelliana. E' stato danneggiato dalla tempesta di qualche giorno fa, ma la vista delle Alpi toglie il fiato. In un angolo vi son alcune sbarre e piastre metalliche per via dei lavori di riparazione in corso.
+
+Tempietto
+0
+0
+0
+0
+0
+45
+0
+0
+0
+0
+35
+Sei sotto i portici di un gran viale. Ci son molti negozietti qui.
+
+Via Po, Ovest
+0
+42
+36
+31
+0
+0
+0
+0
+0
+0
+36
+Sei sotto i portici di un gran viale. Un negozio vende spartiti musicali e noti un poster affisso sul muro.
+
+Via Po, Est
+41
+37
+40
+35
+0
+0
+0
+0
+0
+0
+37
+Sei in un edificio neoclassico, in una stanza rettangolare decorata da stucchi bianchi.
+
+Entrata dell'Accademia Albertina
+36
+38
+0
+0
+0
+0
+0
+0
+0
+0
+38
+Si in una grande stanza, con soffitti alti, pavimenti in marmo decorati con motivi geometrici ed una statua alata. A sud, vedi indicato "Prof. A. Rivetti" su una porta.
+
+Galleria
+37
+39
+-1
+-1
+0
+0
+0
+0
+0
+0
+39
+E' una stanza con una larga finestra e muri imbiancati, piena di statue ed un bancone da lavoro verso destra.
+
+Ufficio di Rivetti
+38
+0
+0
+0
+0
+0
+0
+0
+0
+0
+40
+Sei in una grande piazza, circondata da portici ed aperta verso il fiume Po, attraversato da un largo ponte verso est.
+
+Piazza Vittorio
+0
+0
+46
+36
+0
+0
+0
+0
+0
+0
+41
+Sei di fronte ad uno degli edifici più caratteristici di Torino, l'edificio in mattoni più alto al mondo. Un genio alato era posto sulla cima, ma è caduto 15 giorni fa durante un gran temporale ed è rimasto pericolosamente in bilico. Notevoli riparazioni son in corso e l'ingresso principale è chiuso.
+
+Mole Antonelliana
+0
+36
+44
+0
+0
+0
+0
+0
+0
+0
+42
+Sei nell'ambiente ovattato di un vecchio caffè, con pannelli in legno, tappezzeria decorata e sedute in velluto rosso sulle sedie. Tutto è illuminato da lampadari da cinque becchi a gas. V'è un leggero sentore di caffè e cioccolato.
+
+Caffè Fiorio
+35
+0
+0
+0
+0
+0
+0
+0
+0
+0
+43
+Sei nella biblioteca universitaria nazionale. E' un edificio elegante, ma ci son lavori di ripristino in corso ché parte di esso è stato devastato da un incendio solo 8 mesi fa.
+
+Biblioteca universitaria
+0
+0
+0
+47
+0
+0
+0
+0
+0
+0
+44
+Sei in una viuzza che porta all'accesso secondario per il personale della Mole Antonelliana. V'è una porticina verso nord.
+
+Ingresso personale della Mole
+0
+0
+0
+41
+0
+0
+0
+0
+0
+0
+45
+Sei nella sala centrale, di notevolissima estensione. Tuo padre ti ha portato qui quando l'edificio è stato inaugurato: avevi dieci anni. Adesso è vuoto, ma il genio alato che è quasi precipitato dalla punta è stato posto qui.
+
+Dentro la Mole Antonelliana
+0
+44
+0
+0
+34
+0
+0
+0
+0
+0
+46
+Sei in una piazza ad est del fiume Po. Una chiesa circolare domina il centro della piazza e v'è qui una fermata del tram. Le rotaie continuano verso la collina.
+
+Davanti alla Gran Madre
+0
+0
+0
+40
+0
+0
+0
+0
+0
+0
+47
+Sei in una gran piazza, con un giardinetto ed una statua equestre in mezzo.
+
+Piazza Carlo Alberto
+0
+0
+43
+32
+0
+0
+0
+0
+0
+0
+101
+Il viaggio da Genova a Torino ha richiesto sei ore ed hai dormito un po'. Hai passato il resto del viaggio a guardar il panorama filar fuori dal finestrino, persa nei tuoi pensieri fino a che il treno è arrivato in stazione Porta Nuova a Torino. Hai camminato fino a casa ed hai rivisto tuo padre ed il tuo gatto (quest'ultimo affamato, com'è d'uopo). Son entusiasti di ritrovarti, ma non puoi riposar a lungo: sei determinata a trovar Rovelli e decifrar la lettera che hai scoperta in Genova.
+
+Introduzione
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+102
+Inserisci la parola d'ordine
+
+Introduzione
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+MESSAGGI
+45
+E' una specie di puzzle, ma sei dotata in queste cose: utilizzi la carta gommata per tener insieme i pezzi e funziona. La lettera è leggibile, adesso e dice "Torino, Agosto 20, 1904. Caro Rovelli, 88 43 23..." e una serie di numeri. E' un codice! Questo è strano... La lettera è firmata "Gran Maestro" seguita da un simbolo con una O ed una linea ondulata, una sorta di S all'interno.
+108
+Usa 'abbandona' per uscire dal giuoco.
+231
+Potresti provare, ma non funzionerà.
+232
+Accarezzi Democrito, il tuo gattino. Sembra entusiasta di vederti!
+233
+E' il tuo gatto, un incrocio Siamese tabby ed è molto gentile. E' un gattino piuttosto piccolo ma con pelo morbido e lungo.
+234
+Il tuo babbo è un uomo di mezz'età, piuttosto alto e con gli occhi chiari. Dieci anni fa ha fondato con suo fratello una fabbrica di automobili a vapore chiamata ITA, ovvero l'Industria Torinese Automobili. E' un genio della meccanica ed uomo di cultura.
+235
+Saluti Temistocle, è piuttosto scorbutico con gli sconosciuti, ma ti conosce bene:^M- Ah, Emilia, t'ses riturnà! Ven-ne cun me, il Diretur Schiaparelli a l'è anchiet.^MLo segui e ti accompagna nell'ufficio di Schiaparelli. Quest'ultimo sta lavorando alla sua scrivania:^M- Santo cielo, mia cara Emilia, i sandali di Nefertari erano il ritrovamento più importante della tomba...^M^MAvete una lunga conversazione. Schiaparelli sospetta la compagnia di trasporti e Rovelli in particolare.^M^M- Forse possiamo trovare i sandali nel mercato dell'arte. Hanno un valore inestimabile! Puoi chieder a Vittorio Pizzarrotti se ha sentito qualcosa: vive in una villa sulla collina di Torino ed è un commerciante d'arte e un mecenate molto noto. Ecco il suo biglietto da visita.
+236
+Mostri la lettera a tuo padre, che dice "E' un codice! Vai a veder Antonia Rivetti, ti ricordi di lei? Lavora all'Accademia Albertina; sarà contenta di aiutarti."
+237
+Non v'è ragione per farlo.
+238
+Bussi alla porta ed entri nell'ufficio di Antonia.^M^M- Signora, son Emilia Vittorini.^M- Emilia? L'ultima volta che ti ho vista eri una ragazzina. Cosa ti porta qui?^M^MSpieghi brevemente la situazione e le mostri la lettera.^M^M- Aha! Un codice cifrato legato ad un libro. Lo prendi e numeri ogni parola progressivamente. Associ quindi ad ogni numero la prima lettera delle parole testè numerate ed usi il codice per scriver il testo. Devi conoscer il libro per decifrarlo, è la chiave. Il simbolo d'altro canto mi ricorda qualcosa... Farò qualche ricerca e ti farò sapere.^M^MLa ringrazi calorosamente e continui a chiacchierar con lei per un po'.
+239
+Antonia è sulla quarantina ed è una donna bellissima, così come ti ricordavi. E' una restauratrice esperta ed un'insegnante appassionata. Ha lavorato molte volte con Schiaparelli nel passato ed adora risolver enigmi.
+240
+Il bibliotecario dice, "Salve signora, potete prender qualunque libro desiderate, qui."
+242
+Rappresenta un genio alato fatto in rame. E' quasi caduto due settimane fa; è un miracolo che sia stato recuperato quasi intatto e custodito qui dentro. Noti che qualcuno ha scritto in rosso: "In sapientia credo". V'è poi lo stesso simbolo che hai visto sulla lettera: un cerchio con una diagonale ondulata: si vede che son una O ed una S sovrapposte. Beurk! E' sangue!
+243
+Tuo padre dice "Emilia, hai ricevuto un telegramma, eccotelo."
+244
+Proviene da Antonia Rivetti: "SIMBOLO RICONOSCIUTO STOP INCONTRAMI DA FIORIO ALLE 4 STOP". Se ti sbrighi, puoi arrivare in tempo!
+245
+Antonia sta bevendo un bicchiere di vermouth; quando ti vede ti invita a sederti su una sedia davanti a lei.^M^M- Emilia, cosa posso ordinar per te? Mi piace venir qui a quest'ora. Offro io.^M^MPrendi un bicerin, una bevanda locale fatta con cioccolato e caffè.^M- Dunque, il giuoco è pericoloso: il simbolo è quello di una società segreta chiamata Orientis Sapientia: molti personaggi ricchi e potenti vi son affiliati. La loro dottrina è basata su vecchi codici massonici e sul Corpus Hermeticum di Ermete Trismegisto. V'è un bel po' di confusione. Si dilettano con giovani prostitute, artefatti orientali e riti con sangue umano. Non stupisce che si interessino a Nefertari. Mi chiedo perché abbiano scelto i sandali, però...^M^MTi viene un brivido: preferisci evitar di farti legare ad un altare sacrificale da tali individui.
+246
+Le parli dell'omicidio di Rovelli e di quello che hai trovato scritto sul genio alato della Mole Antonelliana.^M- Beh, ciò mostra quanto son potenti per osar far qualcosa del genere.^MLe chiedi anche chi possa esser questo Gran Maestro.^M- Non lo so, Emilia, forse qualcuno di ricco e pericoloso. Ti suggerisco di cercar il Corpus Hermeticum per provar a decifrar il codice. Si sentono probabilmente fin troppo sicuri di sé dato, che lasciano il loro simbolo dappertutto, la scelta del codice potrebbe esser abbastanza banale.^MTi chiedi se il Gran Maestro non sia Raligotto? O Pizzarrotti? Devi scoprirlo!
+247
+Prendi il tram in direzione di un'elegante villa sulla collina torinese. Arrivata alla porta, tiri una leva ed un maggiordomo viene ad aprirti. Ti presenti e lui ti annuncia al suo padrone, Vittorio Pizzarrotti:^M- Ah, la famosa Emilia Vittorini! Prego, entrate! Ho dedicato la vita ad onorar la bellezza e la vostra presenza rischiarerà la mia modesta dimora.^M^MVedi dipinti e statue probabilmente rari e costosi, ma non apprezzi molto il complimento gratuito. Parlate del mercato d'arte a Torino e Pizzarrotti è molto sollecito. No, non ha sentito nulla a proposito di arte egiziana, ultimamente. Lo ringrazi dicendo che non vuoi rubargli altro tempo, ma il tuo ospite dice,^M- Ho invitato alcuni amici questa sera, eravam in piacevole conversazione in salotto, son sicuro che i miei amici saranno felici di incontrarvi. Perché non state un poco con noi?^M^MHai la sensazione di non poter rifiutare e lo segui.^M
+248
+Sette uomini di mezz'età son presenti in salotto, vestiti in maniera elegante ed appartengono senza dubbio alla Torino bene. La conversazione verte sui libri. Pizzarrotti prende in mano alcune rare edizioni in francese e mostra la preziosa rilegatura con lettere dorate. Poi li ripone su un tavolino. Subito dopo, ti rivolgono alcune domande sulla spedizione in Egitto, ma inizi ad annoiarti. Peggio ancora, ti senti osservata. Dopo un po' Pizzarrotti mostra un mazzo di carte, te ne fa sceglier una che "magicamente" appare in un altro mazzo, dove non avrebbe dovuto essere. La cosa non ti diverte: hai già visto quei giochetti, trucchi di base da prestidigitatore. Ad un certo punto, Pizzarrotti si ferma e con voce ispirata dice:^M- Victor n'est pas un mostre, pagina 134: potete verificare! E, figurati un po', la pagina 134 del primo libro della pila che è rimasta sul tavolino incomincia proprio con quella frase. Conosci anche quel trucco, l'hai imparato su un altro libro (peraltro ottimo). Poi inizia a concionar ed a raccontar aneddoti sulle supposte proprietà magiche della sequenza di Fibonacci: 1, 1, 2, 3, 5, 8, 13... Ti viene la nausea e quasi ti senti male. Dopo qualche minuto ti inventi una scusa e riesci ad estirparti da quella casa. Ti senti molto meglio quando prendi il tram in direzione della Gran Madre.
+249
+- Salve, cerco il Corpus Hemeticum di Ermete Trismegisto.^M- Certo! Riempite questo formulario... Grazie!^MDopo un po' il bibliotecario ritorna con un vecchio libro che ti porge. Ti saluta con un sorriso e sorridi a tua volta.
+250
+Frughi il corpo e trovi i documenti: congratulazioni, hai trovato Rovelli, assassinato! Non puoi giustificar la tua presenza qui: non chiamerai subito la polizia, il cadavere sarà ad ogni modo presto scoperto.
+251
+Dai un'occhiata al libro: presumibilmente scritto da Ermete Trismegisto, è pieno di sciocchezze in latino sulla natura, il cosmo, gli dei e gli uomini! Ma... mancano alcune pagine!
+252
+La porta è chiusa. V'è un lucchetto a combinazione con quattro ruote numerate da 0 a 20.
+253
+Provi numeri della sequenza di Fibonacci: 1, 1, 2, 3 non funziona. Beh, in effetti è troppo semplice. Provi 3, 5, 8, 13 e il lucchetto si apre, con uno sbuffo di vapore!
+254
+Pizzarrotti sembra fosse ossessionato dalla sequenza di Fibonacci, in cui ogni numero è dato dalla somma dei due precedenti... Val la pena provare!
+256
+Provi a muover le sbarre metalliche. V'è qualcosa di nascosto fra di esse: un fascicoletto! Dev'esser caduto qui o è stato nascosto in tutta fretta.
+257
+Quindici pagine strappate da un vecchio libro, tenute insieme da una rilegatura amatoriale. Il testo è in latino e parla di sciocchezze sulla conoscenza e la divinazione.
+258
+Non hai idea di cosa provare.
+259
+No grazie, hai già avuto la tua dose di Pizzarrotti.
+260
+Antonia prende la lettera, il libro ed il fascicolo.^M- Oh, sì! Vanno insieme. Il codice inizia nel libro e continua sulle pagine strappate...^M^M"Caro Rovelli,^M la scatola che voglio arriverà a Genova con il traghetto Rivania e la tua compagnia dovrà trasportarla in Torino. Assicurati che la cassa con i sandali della regina rimarrà in Genova. Raligotto potrà nasconderla per un po'. Il Gran Maestro."^M^MTutto è chiaro, ora... Se sei fortunata, la cassa è ancora a Genova, probabilmente nella villa di Raligotto. Ci andrai in automobile e la troverai.^M^MLa parola d'ordine per la terza parte del giuoco è SHIBBOLETH LUMASSON.
+261
+L'ITA 51 è un'automobile piccola e sportiva, costruita dalla compagnia di tuo padre. E' tua: è veloce ed agile e tu sei un'ottima pilota.
+262
+E' la villa dove vivi con tuo padre. Beh, a dir il vero ci abitavi fino a che non sei partita per la spedizione nove mesi fa. Pensi che abiterai presto per conto tuo.
+263
+Indica nella frase a chi dovrei mostrarla.
+264
+E' Palazzo Madama, un castello medioevale con una facciata barocca più recente.
+265
+I torinesi son pratici. In tempo di pioggia si può camminar letteralmente per chilometri con i piedi all'asciutto senza bisogno di paracqua.
+266
+Un negozio vende stoffe, vicino ad un sarto, un ciabattino ed una panetteria. Non hai bisogno di nulla di ciò.
+267
+V'è un profumo leggiero di pane appena sfornato.
+268
+E' l'odore classico dei caffè italiani.
+269
+E' in bronzo lucidato, rappresenta foglie e fiori di melograno.
+270
+Legno pregiato di ciliegio decora il soffitto.
+271
+La fodera è color crem, con fiorellini e foglie di un verde delicato.
+272
+Sembrano molto comode.
+273
+Non hai il tempo per questo.
+274
+Suonerai il pianoforte quando avrai trovato la cassa rubata.
+275
+E' la stagione d'opera del Teatro Regio. Ti piacciono queste cose. Tuo padre ti ha portato a veder la prima assoluta della Boheme di Puccini, quando avevi diciassette anni.
+276
+E' passato un bel po' dall'ultima volta che ci sei andata. Peccato che non ci sia tempo, ora.
+277
+Non hai fame.
+278
+Quel palazzo ha una bella facciata in mattoni.
+279
+E' un uomo di mezz'età con gli occhi iniettati di sangue ed i denti gialli. Non sembra esser molto amichevole, ma fischietta un'aria d'opera.
+280
+Emette una vivida luce.
+281
+Non sei qui per visitar il museo.
+282
+Rappresenta il re Carlo Alberto di Savoia, su un cavallo. E' in bronzo, con una patina verdognola.
+283
+Erba!
+284
+Una sezione intera della biblioteca è bruciata a gennaio. L'hai saputo dai giornali in Egitto ed hai pensato ai preziosi manoscritti persi o danneggiati dall'incidente.
+285
+Il bibliotecario è chiaramente più giovane di te. Probabilmente, è uno studente che è qui per sbarcar il lunario. Lo trovi carino!
+286
+E' una porta robusta, chiusa.
+287
+Non è più qui. Pendeva pericolosamente in bilico dopo la tempesta ed è stato rimosso.
+288
+Impalcature circondano la guglia.
+289
+Sai, tuoi padre può ancora dar buoni consigli.
+290
+Prova ad incontrar persone, cercar informazioni ed esplorar i dintorni.
+291
+Devi solo trovar il libro giusto, sperando sia completo!
+292
+Gli stucchi decorano il soffitto.
+293
+E' una copia della Vittoria (o Nike) di Samotracia.
+294
+Il pavimento è in marmo lucidato con un quadrato di marmo verde delle Alpi, circondato da ottagoni e disegni bianchi e verdi.
+295
+Piccoli busti e teste umane, in gesso, molto ben modellate. Probabilmente Antonia le usa con i suoi studenti.
+296
+Il bancone da lavoro è pieno di attrezzi per disegnar e scolpire.
+297
+Dipinti di artisti contemporanei scelti con gusto decorano i muri.
+298
+E' un vasto fiume e diventa ancora più grande durante il suo corso verso il mare.
+299
+E' un ponte con cinque arcate e ringhiera in ferro battuto.
+300
+Tuo padre ti dice,^M- Son felice che sia venuta, Emilia. Sei sicura che non vuoi rimaner un po' più a lungo? I tesori di Schiaparelli non posson ben attender qualche giorno?^MGli rispondi che ti senti in obbligo di ritrovar la cassa rubata.^M- Ti capisco fin troppo bene, figliola mia: posso appena dormire quando ho qualcosa che mi frulla in testa. A proposito, hai ricevuto un messaggio questa mattina. Eccolo.^MLo ringrazi e prendi la missiva.
+301
+Luqsor, 25 agosto 1904^M^MMia cara Emilia,^M  riceverai probabilmente questa missiva al tuo arrivo a Torino, spero che il viaggio sia andato bene.^MTi scrivo giacché son molto preoccupato: ho ricevuto offerte fin troppo insistenti per i miei gusti. Uno straniero è giunto da me alla missione ed ha offerto una somma assurda per i sandali della Regina. Se n'è andato solo quando ha appreso che erano già partiti alla volta di Torino.^MSon sicuro che qualcun altro l'ha mandato: abbiamo parlato in italiano e non sarei sorpreso nello scoprir che è l'agente di qualcuno in Italia. E' solo un'impressione, ma fai attenzione.^M^M  padre Antonio Milieri, missione italiana in Luqsor^M^MP.S. Francesco e Bolos hanno saputo che ti scrivevo e ti mandano i loro saluti.
+302
+Ci son molti caffè e negozietti sotto i portici. Non sei qui per essi.
+303
+E' una chiesa circolare a cui si accede tramite una scalinata. Due statue sembrano guardar verso un punto indefinito, sotto le rotaie del tram in mezzo alla piazza.
+304
+Puoi prender il tram qui se vuoi salir in collina.
+305
+E' una giornata limpida e puoi veder tutta la città ai tuoi piedi, circondata dalla magnifica cornice delle Alpi. Riconosci il mon Viso, il Rocciamelone, il Gran Paradiso ed il monte Rosa.
+306
+Un leggero odore di fumo e di muffa si sente appena.
+307
+Ne hai bisogno per l'automobile.
+308
+V'è un indirizzo sulla collina torinese.
+309
+- Ah, signora, il direttore è partito!
+310
+Antonia sembra occupata a legger un libro. Non vuoi disturbarla: devi trovar il Corpus Hermeticum!
+311
+Scrivi "prova" ed il nome, oppure quattro numeri.
+400
+No. Non sei stanca.
+401
+Non v'è bisogno di questo, ora.
+407
+Questo giuoco è un'avventura testuale. Leggi con cura le descrizioni e scrivi comandi come 'esamina il letto'. Scrivi 'nord', 'sud', 'est', 'ovest' per muoverti nella direzione desiderata. Son possibili abbreviazioni, come 'x' per 'esamina', 'g' per 'guarda' (ovvero descrivi nuovamente dove ti trovi), 'i' per 'inventario', 'n' per 'nord' e così via. Per uscire dal giuoco, scrivi 'abbandona'. Per ricominciare, scrivi 'ricomincia'. Se vuoi una mano, prova a scriver 'indizio'.
+504
+Prego, continua pure se lo desideri... Mi son fatta il callo ad insulti ed ingiurie molti anni fa.
+505
+Quale gatto?
+518
+Potrai ammirarti meglio con uno specchio.
+902
+Prova un'azione più specifica.
+910
+E' evidente che il fascicolo ti permetterà di ottenere il testo completo, ma meglio chieder aiuto a una specialista.
+914
+Non ancora, sembra incompleto.
+996
+Non vedo nulla di interessante.
+997
+Non avverti nulla in particolare, salvo una tenue fragranza di lavanda che proviene dai tuoi vestiti.
+998
+Ti senti strana, un po' come se diventassi leggiera leggiera. Dopo un po', questa sensazione svanisce e tutto ridiviene normale.
+1000
+Va bene.
+1001
+Fatto.
+1002
+Fatto.
+1003
+a
+1004
+a
+1005
+Non puoi prenderlo!
+1006
+Non puoi farlo!
+1007
+Non l'hai con te!
+1008
+Non puoi andar da quella parte!
+1009
+Prego?
+1010
+Non puoi.
+1011
+Ce l'hai già con te.
+1012
+Cosa vuoi fare?
+1013
+E' scuro, non si vede nulla.
+1018
+Indossi 
+1019
+L'hai già indossato.
+1020
+Puoi andare: 
+1021
+nord
+1022
+sud
+1023
+est
+1024
+ovest
+1025
+su
+1026
+giù
+1027
+
+1028
+
+1029
+
+1030
+
+1031
+Puoi notare: 
+1032
+Hai con te: 
+1033
+Non porti nulla con te.
+1035
+
+OGGETTI
+45
+
+Lettera ricomposta
+0
+0
+1500
+FALSE
+FALSE
+105
+
+Democrito, un gatto siamese
+0
+0
+30
+FALSE
+FALSE
+170
+
+Tuo padre
+0
+0
+30
+TRUE
+FALSE
+171
+
+Un messaggio dall'Egitto
+0
+0
+0
+FALSE
+FALSE
+172 
+
+Una chiave quadra con il simbolo ITA
+0
+0
+1500
+FALSE
+FALSE
+173
+
+Degli occhialoni da pilota
+0
+0
+1500
+FALSE
+TRUE
+174
+
+Temistocle, il custode del museo
+0
+0
+33
+TRUE
+FALSE
+175
+
+Antonia Rivetti
+0
+0
+39
+TRUE
+FALSE
+176
+
+Un bibliotecario
+0
+0
+43
+FALSE
+FALSE
+177
+
+Il Corpus hermeticum
+0
+0
+0
+FALSE
+FALSE
+178
+
+Un telegramma da Antonia Rivetti
+0
+0
+0
+FALSE
+FALSE
+179
+
+Un cadavere, in una pozza di sangue
+0
+0
+34
+TRUE
+FALSE
+180
+
+Un piccolo fascicolo
+0
+0
+0
+FALSE
+FALSE
+181
+
+L'automobile ITA 51
+0
+0
+30
+FALSE
+FALSE
+182
+
+Il biglietto da visita di Pizzarrotti
+0
+0
+0
+FALSE
+FALSE
+FINEDATI
