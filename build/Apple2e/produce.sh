@@ -14,5 +14,5 @@ java -jar $acjarfile -p ./queens_it.po TEXT.DAT 0 < text_it.dat
 cp ../readme.txt .
 
 rm  AppleIIe_Queens_IT.zip
-zip -r AppleIIe_Queens_IT.zip queens_it.po readme.txt
+zip -r AppleIIe_Queens_IT.zip queens_it.po readme.txt note_Apple2e.txt
 cp AppleIIe_Queens_IT.zip $ditdir
